@@ -1,0 +1,22 @@
+[0.481s] Invoking command in '/home/carles/tfg_ws/src/abb_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/carles/tfg_ws/build/abb_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/carles/tfg_ws/install/abb_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/abb_control build --build-base /home/carles/tfg_ws/build/abb_control/build install --record /home/carles/tfg_ws/build/abb_control/install.log --single-version-externally-managed install_data
+[0.639s] running egg_info
+[0.646s] writing ../../build/abb_control/abb_control.egg-info/PKG-INFO
+[0.646s] writing dependency_links to ../../build/abb_control/abb_control.egg-info/dependency_links.txt
+[0.646s] writing entry points to ../../build/abb_control/abb_control.egg-info/entry_points.txt
+[0.646s] writing requirements to ../../build/abb_control/abb_control.egg-info/requires.txt
+[0.646s] writing top-level names to ../../build/abb_control/abb_control.egg-info/top_level.txt
+[0.669s] reading manifest file '../../build/abb_control/abb_control.egg-info/SOURCES.txt'
+[0.669s] writing manifest file '../../build/abb_control/abb_control.egg-info/SOURCES.txt'
+[0.669s] running build
+[0.669s] running build_py
+[0.670s] running install
+[0.674s] running install_lib
+[0.684s] running install_data
+[0.684s] copying launch/conectar_web.launch.py -> /home/carles/tfg_ws/install/abb_control/share/abb_control/launch
+[0.684s] running install_egg_info
+[0.696s] removing '/home/carles/tfg_ws/install/abb_control/lib/python3.12/site-packages/abb_control-0.0.0-py3.12.egg-info' (and everything under it)
+[0.696s] Copying ../../build/abb_control/abb_control.egg-info to /home/carles/tfg_ws/install/abb_control/lib/python3.12/site-packages/abb_control-0.0.0-py3.12.egg-info
+[0.697s] running install_scripts
+[0.771s] Installing bailar script to /home/carles/tfg_ws/install/abb_control/lib/abb_control
+[0.771s] writing list of installed files to '/home/carles/tfg_ws/build/abb_control/install.log'
+[0.789s] Invoked command in '/home/carles/tfg_ws/src/abb_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/carles/tfg_ws/build/abb_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/carles/tfg_ws/install/abb_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/abb_control build --build-base /home/carles/tfg_ws/build/abb_control/build install --record /home/carles/tfg_ws/build/abb_control/install.log --single-version-externally-managed install_data

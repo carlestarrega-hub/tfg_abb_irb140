@@ -1,0 +1,2 @@
+[console_scripts]
+bailar = abb_control.simple_move:main
