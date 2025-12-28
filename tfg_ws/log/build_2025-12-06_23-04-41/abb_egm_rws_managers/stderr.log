@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:36 (find_package):
+  By not providing "Findabb_librws.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "abb_librws", but CMake did not find one.
+
+  Could not find a package configuration file provided by "abb_librws" with
+  any of the following names:
+
+    abb_librwsConfig.cmake
+    abb_librws-config.cmake
+
+  Add the installation prefix of "abb_librws" to CMAKE_PREFIX_PATH or set
+  "abb_librws_DIR" to a directory containing one of the above files.  If
+  "abb_librws" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m

@@ -1,0 +1,8 @@
+[31mCMake Error at cmake/modules/third_party/FindPoco.cmake:189 (MESSAGE):
+  Poco was not found.  Set the Poco_INCLUDE_DIR cmake cache entry to the
+  top-level directory containing the poco include directories.  E.g
+  /usr/local/include/ or c:\poco\include\poco-1.3.2
+Call Stack (most recent call first):
+  CMakeLists.txt:26 (find_package)
+
+[0m

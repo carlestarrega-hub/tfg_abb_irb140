@@ -1,0 +1,2 @@
+[console_scripts]
+robot_control_node = robot_control_pkg.web_control:main

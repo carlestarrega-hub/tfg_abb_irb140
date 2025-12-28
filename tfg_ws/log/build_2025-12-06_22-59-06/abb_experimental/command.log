@@ -1,0 +1,1 @@
+Invoking command in '/home/ubuntu/tfg_ws/build/abb_experimental': /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_experimental/abb_experimental -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_experimental

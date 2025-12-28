@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb1200_gazebo': /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_description/gazebo/abb_irb1200_gazebo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_irb1200_gazebo
+Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb1200_gazebo' returned '1': /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_description/gazebo/abb_irb1200_gazebo -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_irb1200_gazebo

@@ -1,0 +1,19 @@
+[0.029s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_resources': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_ros2/abb_resources -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_resources
+[0.193s] -- The C compiler identification is GNU 13.3.0
+[0.347s] -- The CXX compiler identification is GNU 13.3.0
+[0.381s] -- Detecting C compiler ABI info
+[0.601s] -- Detecting C compiler ABI info - done
+[0.619s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.620s] -- Detecting C compile features
+[0.620s] -- Detecting C compile features - done
+[0.637s] -- Detecting CXX compiler ABI info
+[0.888s] -- Detecting CXX compiler ABI info - done
+[0.910s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.911s] -- Detecting CXX compile features
+[0.912s] -- Detecting CXX compile features - done
+[0.917s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.217s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.379s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.606s] -- Configuring done (1.6s)
+[1.611s] -- Generating done (0.0s)
+[1.613s] -- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_resources

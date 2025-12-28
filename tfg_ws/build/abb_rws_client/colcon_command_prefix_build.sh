@@ -1,0 +1,5 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/package.sh"
+. "/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/package.sh"
+. "/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/package.sh"
+. "/home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/package.sh"

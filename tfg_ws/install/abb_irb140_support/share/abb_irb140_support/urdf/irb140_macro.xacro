@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="abb_irb140" params="prefix">
+    <link name="base_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/visual/base_link.stl"/></geometry>
+        <material name="abb_orange"><color rgba="1 0.43 0 1"/></material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/collision/base_link.stl"/></geometry>
+      </collision>
+    </link>
+    <link name="link_1">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/visual/link_1.stl"/></geometry>
+        <material name="abb_orange"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/collision/link_1.stl"/></geometry>
+      </collision>
+    </link>
+    <link name="link_2">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/visual/link_2.stl"/></geometry>
+        <material name="abb_orange"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/collision/link_2.stl"/></geometry>
+      </collision>
+    </link>
+    <link name="link_3">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/visual/link_3.stl"/></geometry>
+        <material name="abb_orange"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/collision/link_3.stl"/></geometry>
+      </collision>
+    </link>
+    <link name="link_4">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/visual/link_4.stl"/></geometry>
+        <material name="abb_orange"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/collision/link_4.stl"/></geometry>
+      </collision>
+    </link>
+    <link name="link_5">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/visual/link_5.stl"/></geometry>
+        <material name="abb_orange"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/collision/link_5.stl"/></geometry>
+      </collision>
+    </link>
+    <link name="link_6">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/visual/link_6.stl"/></geometry>
+        <material name="abb_black"><color rgba="0 0 0 1"/></material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry><mesh filename="package://abb_irb140_support/meshes/irb140/collision/link_6.stl"/></geometry>
+      </collision>
+    </link>
+
+    <joint name="joint_1" type="revolute">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="base_link"/>
+      <child link="link_1"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="-3.1416" upper="3.1416" effort="0" velocity="2.618"/>
+    </joint>
+    <joint name="joint_2" type="revolute">
+      <origin xyz="0.070 0 0.352" rpy="0 0 0"/>
+      <parent link="link_1"/>
+      <child link="link_2"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-1.5708" upper="1.9198" effort="0" velocity="2.618"/>
+    </joint>
+    <joint name="joint_3" type="revolute">
+      <origin xyz="0 -0.065 0.360" rpy="0 0 0"/>
+      <parent link="link_2"/>
+      <child link="link_3"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-4.0142" upper="0.8726" effort="0" velocity="2.618"/>
+    </joint>
+    <joint name="joint_4" type="revolute">
+      <origin xyz="0.239 0.065 0" rpy="0 0 0"/>
+      <parent link="link_3"/>
+      <child link="link_4"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-3.4906" upper="3.4906" effort="0" velocity="6.2832"/>
+    </joint>
+    <joint name="joint_5" type="revolute">
+      <origin xyz="0.141 0 0" rpy="0 0 0"/>
+      <parent link="link_4"/>
+      <child link="link_5"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="-2.0071" upper="2.0071" effort="0" velocity="6.2832"/>
+    </joint>
+    <joint name="joint_6" type="revolute">
+      <origin xyz="0.065 0 0" rpy="0 0 0"/>
+      <parent link="link_5"/>
+      <child link="link_6"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-6.9813" upper="6.9813" effort="0" velocity="7.854"/>
+    </joint>
+  </xacro:macro>
+</robot>

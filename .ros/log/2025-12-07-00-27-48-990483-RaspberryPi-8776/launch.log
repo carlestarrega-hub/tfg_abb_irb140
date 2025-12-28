@@ -1,0 +1,83 @@
+1765063668.9918396 [INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2025-12-07-00-27-48-990483-RaspberryPi-8776
+1765063668.9920411 [INFO] [launch]: Default logging verbosity is set to INFO
+1765063669.1176956 [INFO] [moveit_setup_assistant-1]: process started with pid [8785]
+1765063782.1903195 [moveit_setup_assistant-1] [INFO] [1765063782.189753546] [moveit_setup_assistant.urdf]: Loaded abb_irb140 robot model.
+1765063782.1998563 [moveit_setup_assistant-1] [INFO] [1765063782.199383666] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+1765063782.2000866 [moveit_setup_assistant-1] [INFO] [1765063782.199444944] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+1765063782.2002051 [moveit_setup_assistant-1] [WARN] [1765063782.199493944] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+1765063782.2005837 [moveit_setup_assistant-1] [WARN] [1765063782.199569759] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links
+1765063805.6438253 [moveit_setup_assistant-1] [INFO] [1765063805.643223651] [moveit_setup_assistant.urdf]: Loaded abb_irb140 robot model.
+1765063805.6441078 [moveit_setup_assistant-1] [INFO] [1765063805.643375836] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+1765063805.6446514 [moveit_setup_assistant-1] [INFO] [1765063805.643429392] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+1765063805.6448586 [moveit_setup_assistant-1] [WARN] [1765063805.643471651] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+1765063805.6449761 [moveit_setup_assistant-1] [WARN] [1765063805.643521188] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links
+1765063806.5124683 [moveit_setup_assistant-1] [rviz_rendering:debug] Available Renderers(1): OpenGL Rendering Subsystem, at ./src/rviz_rendering/render_system.cpp:289
+1765063806.5126126 [moveit_setup_assistant-1] [rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:531
+1765063806.5126669 [moveit_setup_assistant-1] [rviz_rendering:info] OpenGl version: 4.5 (GLSL 4.5), at ./src/rviz_rendering/render_system.cpp:272
+1765063806.5127103 [moveit_setup_assistant-1] [rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:531
+1765063806.5127497 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5127897 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_default_plugins/icons/classes/TF.svg]: Couldn't open file /opt/ros/jazzy/share/rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:55
+1765063806.5128551 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.png, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5129039 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/classes/Identity.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5129435 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_common/icons/classes/Identity.svg]: Couldn't open file /opt/ros/jazzy/share/rviz_common/icons/classes/Identity.svg, at ./src/rviz_common/load_resource.cpp:55
+1765063806.5129800 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/classes/Identity.png, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5130162 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_common/icons/classes/Identity.png]: Couldn't open file /opt/ros/jazzy/share/rviz_common/icons/classes/Identity.png, at ./src/rviz_common/load_resource.cpp:55
+1765063806.5130713 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/default_class_icon.png, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5131083 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/options.png, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5131423 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/ok.png, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5131781 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/warning.png, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5132098 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/error.png, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5132425 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Orbit.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5132880 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_default_plugins/icons/classes/Orbit.svg]: Couldn't open file /opt/ros/jazzy/share/rviz_default_plugins/icons/classes/Orbit.svg, at ./src/rviz_common/load_resource.cpp:55
+1765063806.5133259 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Orbit.png, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5133619 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_default_plugins/icons/classes/Orbit.png]: Couldn't open file /opt/ros/jazzy/share/rviz_default_plugins/icons/classes/Orbit.png, at ./src/rviz_common/load_resource.cpp:55
+1765063806.5133998 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/rotate.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5134351 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/cursor.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5134697 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/rotate_cam.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5135028 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/move2d.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5135345 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/move_z.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5135663 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/zoom.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5135975 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_common/icons/crosshair.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5136294 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/FocusCamera.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5136628 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Interact.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063806.5215080 [moveit_setup_assistant-1] [INFO] [1765063806.521114403] [moveit_3196896965.moveit.ros.rdf_loader]: Loaded robot model in 0.00111596 seconds
+1765063806.5217087 [moveit_setup_assistant-1] [INFO] [1765063806.521182699] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+1765063806.5217915 [moveit_setup_assistant-1] [INFO] [1765063806.521209199] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+1765063806.5220773 [moveit_setup_assistant-1] [WARN] [1765063806.521240459] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+1765063806.5221994 [moveit_setup_assistant-1] [WARN] [1765063806.521290088] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links
+1765063806.5271502 [moveit_setup_assistant-1] [INFO] [1765063806.526775519] [moveit_3196896965.moveit.ros.rdf_loader]: Loaded robot model in 0.000760927 seconds
+1765063806.5273685 [moveit_setup_assistant-1] [INFO] [1765063806.526840575] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+1765063806.5274572 [moveit_setup_assistant-1] [INFO] [1765063806.526865519] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+1765063806.5277727 [moveit_setup_assistant-1] [WARN] [1765063806.526893630] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+1765063806.5278938 [moveit_setup_assistant-1] [WARN] [1765063806.526933316] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links
+1765063806.8268244 [moveit_setup_assistant-1] [INFO] [1765063806.826382017] [moveit_setup_assistant.Start Screen]: Loading Setup Assistant Complete
+1765063809.5375359 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_default_plugins/icons/classes/Interact.svg]: Couldn't open file /opt/ros/jazzy/share/rviz_default_plugins/icons/classes/Interact.svg, at ./src/rviz_common/load_resource.cpp:55
+1765063809.5377018 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Interact.png, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5377564 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Measure.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5377989 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/MoveCamera.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5378387 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_default_plugins/icons/classes/MoveCamera.svg]: Couldn't open file /opt/ros/jazzy/share/rviz_default_plugins/icons/classes/MoveCamera.svg, at ./src/rviz_common/load_resource.cpp:55
+1765063809.5378778 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/MoveCamera.png, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5379140 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/PublishPoint.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5379498 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Select.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5379851 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_default_plugins/icons/classes/Select.svg]: Couldn't open file /opt/ros/jazzy/share/rviz_default_plugins/icons/classes/Select.svg, at ./src/rviz_common/load_resource.cpp:55
+1765063809.5380194 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Select.png, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5380533 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetGoal.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5380876 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_default_plugins/icons/classes/SetGoal.svg]: Couldn't open file /opt/ros/jazzy/share/rviz_default_plugins/icons/classes/SetGoal.svg, at ./src/rviz_common/load_resource.cpp:55
+1765063809.5381217 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetGoal.png, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5381730 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetInitialPose.svg, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5382075 [moveit_setup_assistant-1] [rviz_common:debug] Error retrieving file [file:///opt/ros/jazzy/share/rviz_default_plugins/icons/classes/SetInitialPose.svg]: Couldn't open file /opt/ros/jazzy/share/rviz_default_plugins/icons/classes/SetInitialPose.svg, at ./src/rviz_common/load_resource.cpp:55
+1765063809.5382395 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetInitialPose.png, at ./src/rviz_common/load_resource.cpp:71
+1765063809.5382926 [moveit_setup_assistant-1] [rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/RobotLink.png, at ./src/rviz_common/load_resource.cpp:71
+1765064600.6274850 [moveit_setup_assistant-1] [INFO] [1765064600.626909702] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+1765064600.6277826 [moveit_setup_assistant-1] [INFO] [1765064600.627027683] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+1765064600.6278973 [moveit_setup_assistant-1] [WARN] [1765064600.627072257] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+1765064600.6282072 [moveit_setup_assistant-1] [WARN] [1765064600.627115276] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links
+1765064608.0080135 [moveit_setup_assistant-1] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+1765064608.0083559 [moveit_setup_assistant-1]          at line 127 in ./src/class_loader.cpp
+1765064608.0085430 [moveit_setup_assistant-1] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+1765064608.0086739 [moveit_setup_assistant-1]          at line 127 in ./src/class_loader.cpp
+1765064608.0087693 [moveit_setup_assistant-1] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+1765064608.0088704 [moveit_setup_assistant-1]          at line 127 in ./src/class_loader.cpp
+1765064608.0089598 [moveit_setup_assistant-1] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+1765064608.0090346 [moveit_setup_assistant-1]          at line 127 in ./src/class_loader.cpp
+1765064608.1730559 [INFO] [moveit_setup_assistant-1]: process has finished cleanly [pid 8785]

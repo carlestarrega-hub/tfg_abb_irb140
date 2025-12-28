@@ -1,0 +1,22 @@
+[0.023s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb140_support': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_irb140_support -- -j4 -l4
+[0.101s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb140_support' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_irb140_support -- -j4 -l4
+[0.104s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb140_support': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_irb140_support
+[0.122s] -- Install configuration: ""
+[0.123s] -- Execute custom install script
+[0.125s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140.urdf
+[0.126s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/package_run_dependencies/abb_irb140_support
+[0.127s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/parent_prefix_path/abb_irb140_support
+[0.127s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.sh
+[0.128s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.dsv
+[0.129s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.sh
+[0.129s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.dsv
+[0.129s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.bash
+[0.129s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.sh
+[0.129s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.zsh
+[0.130s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.dsv
+[0.130s] -- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.dsv
+[0.148s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/packages/abb_irb140_support
+[0.149s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig.cmake
+[0.149s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig-version.cmake
+[0.150s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.xml
+[0.155s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb140_support' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_irb140_support

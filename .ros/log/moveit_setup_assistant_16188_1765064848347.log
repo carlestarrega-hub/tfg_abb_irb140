@@ -1,0 +1,43 @@
+[INFO] [1765064868.972818327] [moveit_setup_assistant.urdf]: Loaded abb_irb140 robot model.
+[INFO] [1765064868.982492815] [moveit_918801748.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765064868.982557333] [moveit_918801748.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765064868.983025629] [moveit_918801748.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064868.983311333] [moveit_918801748.moveit.core.robot_model]: Link link_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064868.983511017] [moveit_918801748.moveit.core.robot_model]: Link link_2 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064868.983678091] [moveit_918801748.moveit.core.robot_model]: Link link_3 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064868.983859073] [moveit_918801748.moveit.core.robot_model]: Link link_4 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064868.984033906] [moveit_918801748.moveit.core.robot_model]: Link link_5 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064868.984207646] [moveit_918801748.moveit.core.robot_model]: Link link_6 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064868.984305276] [moveit_918801748.moveit.core.robot_model]: No geometry is associated to any robot links
+[INFO] [1765064870.194872175] [moveit_setup_assistant.urdf]: Loaded abb_irb140 robot model.
+[INFO] [1765064870.194973545] [moveit_918801748.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765064870.195020638] [moveit_918801748.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765064870.195443507] [moveit_918801748.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.195728174] [moveit_918801748.moveit.core.robot_model]: Link link_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.195977414] [moveit_918801748.moveit.core.robot_model]: Link link_2 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.196229636] [moveit_918801748.moveit.core.robot_model]: Link link_3 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.196503784] [moveit_918801748.moveit.core.robot_model]: Link link_4 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.196753821] [moveit_918801748.moveit.core.robot_model]: Link link_5 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.196988654] [moveit_918801748.moveit.core.robot_model]: Link link_6 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.197108116] [moveit_918801748.moveit.core.robot_model]: No geometry is associated to any robot links
+[INFO] [1765064870.592152316] [moveit_918801748.moveit.ros.rdf_loader]: Loaded robot model in 0.00120137 seconds
+[INFO] [1765064870.592212316] [moveit_918801748.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765064870.592236094] [moveit_918801748.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765064870.592473168] [moveit_918801748.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.592643445] [moveit_918801748.moveit.core.robot_model]: Link link_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.592832241] [moveit_918801748.moveit.core.robot_model]: Link link_2 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.593008908] [moveit_918801748.moveit.core.robot_model]: Link link_3 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.593167982] [moveit_918801748.moveit.core.robot_model]: Link link_4 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.593339333] [moveit_918801748.moveit.core.robot_model]: Link link_5 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.593483055] [moveit_918801748.moveit.core.robot_model]: Link link_6 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.593535185] [moveit_918801748.moveit.core.robot_model]: No geometry is associated to any robot links
+[INFO] [1765064870.602996451] [moveit_918801748.moveit.ros.rdf_loader]: Loaded robot model in 0.000994388 seconds
+[INFO] [1765064870.603061933] [moveit_918801748.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765064870.603083581] [moveit_918801748.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765064870.603335358] [moveit_918801748.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.603515914] [moveit_918801748.moveit.core.robot_model]: Link link_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.603692043] [moveit_918801748.moveit.core.robot_model]: Link link_2 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.603863598] [moveit_918801748.moveit.core.robot_model]: Link link_3 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.604021839] [moveit_918801748.moveit.core.robot_model]: Link link_4 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.604174098] [moveit_918801748.moveit.core.robot_model]: Link link_5 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064870.604337338] [moveit_918801748.moveit.c

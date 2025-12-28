@@ -1,0 +1,31 @@
+[ 16%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 33%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 50%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 50%] Built target gtest_main
+[ 66%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 66%] Built target gtest
+[ 83%] [32mBuilding CXX object CMakeFiles/test_command_topics.dir/test/test_command_topics.cpp.o[0m
+[100%] [32m[1mLinking CXX executable test_command_topics[0m
+[100%] Built target test_command_topics
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/config/abb_controllers.yaml
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/launch/abb_control.launch.py
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/launch/abb_moveit.launch.py
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/launch/abb_rws_client.launch.py
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/ament_index/resource_index/package_run_dependencies/abb_bringup
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/ament_index/resource_index/parent_prefix_path/abb_bringup
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/environment/path.sh
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/environment/path.dsv
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/local_setup.bash
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/local_setup.sh
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/local_setup.zsh
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/local_setup.dsv
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/package.dsv
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/ament_index/resource_index/packages/abb_bringup
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/cmake/abb_bringupConfig.cmake
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/cmake/abb_bringupConfig-version.cmake
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/package.xml

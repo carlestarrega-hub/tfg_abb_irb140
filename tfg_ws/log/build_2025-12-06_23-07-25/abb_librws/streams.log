@@ -1,0 +1,46 @@
+[0.027s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_librws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_librws -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_librws
+[0.053s] -- Searching for Poco library...
+[0.070s] --   Found Poco!
+[0.070s] -- components found: Foundation, Net, Util, XML.
+[0.075s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[0.271s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[0.272s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[0.462s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[0.463s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[0.627s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[0.629s] -- Configuring done (0.6s)
+[0.637s] -- Generating done (0.0s)
+[0.639s] -- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_librws
+[0.645s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_librws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_librws -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_librws
+[0.647s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_librws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_librws -- -j4 -l4
+[0.737s] [ 57%] [32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_interface.cpp.o[0m
+[0.737s] [ 57%] [32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_client.cpp.o[0m
+[0.737s] [ 57%] [32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_common.cpp.o[0m
+[0.737s] [ 57%] [32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_poco_client.cpp.o[0m
+[1.782s] [ 71%] [32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_rapid.cpp.o[0m
+[2.051s] [ 85%] [32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_state_machine_interface.cpp.o[0m
+[3.395s] [100%] [32m[1mLinking CXX shared library libabb_librws.so[0m
+[3.629s] [100%] Built target abb_librws
+[3.649s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_librws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_librws -- -j4 -l4
+[3.651s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_librws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_librws
+[3.665s] -- Install configuration: ""
+[3.666s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include
+[3.666s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws
+[3.666s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_rapid.h
+[3.666s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_poco_client.h
+[3.666s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_common.h
+[3.666s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_state_machine_interface.h
+[3.666s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_cfg.h
+[3.667s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_interface.h
+[3.667s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_client.h
+[3.667s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/abb_librws_export.h
+[3.667s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake
+[3.667s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake/FindPoco.cmake
+[3.667s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake/README.md
+[3.668s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/lib/libabb_librws.so
+[3.669s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/abb_librwsConfig.cmake
+[3.669s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/abb_librwsConfigVersion.cmake
+[3.669s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/package.xml
+[3.670s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/abb_librwsTargets.cmake
+[3.670s] -- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/abb_librwsTargets-noconfig.cmake
+[3.673s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_librws' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_librws

@@ -1,0 +1,50 @@
+[0.000000] (-) TimerEvent: {}
+[0.000390] (robot_control_pkg) JobQueued: {'identifier': 'robot_control_pkg', 'dependencies': OrderedDict()}
+[0.000678] (robot_control_pkg) JobStarted: {'identifier': 'robot_control_pkg'}
+[0.099678] (-) TimerEvent: {}
+[0.199966] (-) TimerEvent: {}
+[0.300198] (-) TimerEvent: {}
+[0.400471] (-) TimerEvent: {}
+[0.500753] (-) TimerEvent: {}
+[0.600993] (-) TimerEvent: {}
+[0.701229] (-) TimerEvent: {}
+[0.801458] (-) TimerEvent: {}
+[0.901663] (-) TimerEvent: {}
+[1.001884] (-) TimerEvent: {}
+[1.102093] (-) TimerEvent: {}
+[1.202302] (-) TimerEvent: {}
+[1.302546] (-) TimerEvent: {}
+[1.330041] (robot_control_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_control_pkg', 'build', '--build-base', '/home/ubuntu/ros2_ws_clean/build/robot_control_pkg/build', 'install', '--record', '/home/ubuntu/ros2_ws_clean/build/robot_control_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/ros2_ws_clean/src/robot_control_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 53857 22', 'ROS_PACKAGE_PATH': '/opt/ros/noetic/share', 'XDG_SESSION_TYPE': 'tty', 'ROS_ETC_DIR': '/opt/ros/noetic/etc/ros', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/ros/noetic/lib', 'HOME': '/home/ubuntu', 'CONDA_SHLVL': '1', 'OLDPWD': '/home/ubuntu/ros2_ws_clean/src/robot_control_pkg', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', '_CE_M': '', '_CONDA_ROOT': '/home/ubuntu/miniconda3', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/opt/ros/noetic/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '13', '_CE_CONDA': '', 'PATH': '/opt/ros/jazzy/bin:/home/ubuntu/.local/bin:/home/ubuntu/miniconda3/bin:/home/ubuntu/miniconda3/condabin:/opt/ros/noetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/ubuntu/.local/bin:/home/ubuntu/.local/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'ROS_ROOT': '/opt/ros/noetic/share/ros', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/ubuntu/miniconda3/bin/python', 'SHELL': '/bin/bash', 'ROS_MASTER_URI': 'http://localhost:11311', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CONDA_DEFAULT_ENV': 'base', '_CONDA_EXE': '/home/ubuntu/miniconda3/bin/conda', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/ros2_ws_clean/build/robot_control_pkg', 'CONDA_EXE': '/home/ubuntu/miniconda3/bin/conda', 'SSH_CONNECTION': '192.168.1.131 53857 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/ros2_ws_clean/build/robot_control_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/ros2_ws_clean/install/robot_control_pkg/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/noetic/lib/python3/dist-packages', 'CONDA_PREFIX': '/home/ubuntu/miniconda3', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/noetic'}, 'shell': False}
+[1.402647] (-) TimerEvent: {}
+[1.502921] (-) TimerEvent: {}
+[1.603187] (-) TimerEvent: {}
+[1.703470] (-) TimerEvent: {}
+[1.726008] (robot_control_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.755908] (robot_control_pkg) StdoutLine: {'line': b'writing ../../build/robot_control_pkg/robot_control_pkg.egg-info/PKG-INFO\n'}
+[1.756296] (robot_control_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_control_pkg/robot_control_pkg.egg-info/dependency_links.txt\n'}
+[1.757434] (robot_control_pkg) StdoutLine: {'line': b'writing entry points to ../../build/robot_control_pkg/robot_control_pkg.egg-info/entry_points.txt\n'}
+[1.757727] (robot_control_pkg) StdoutLine: {'line': b'writing requirements to ../../build/robot_control_pkg/robot_control_pkg.egg-info/requires.txt\n'}
+[1.757968] (robot_control_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/robot_control_pkg/robot_control_pkg.egg-info/top_level.txt\n'}
+[1.803544] (-) TimerEvent: {}
+[1.819280] (robot_control_pkg) StdoutLine: {'line': b"reading manifest file '../../build/robot_control_pkg/robot_control_pkg.egg-info/SOURCES.txt'\n"}
+[1.820249] (robot_control_pkg) StdoutLine: {'line': b"writing manifest file '../../build/robot_control_pkg/robot_control_pkg.egg-info/SOURCES.txt'\n"}
+[1.820463] (robot_control_pkg) StdoutLine: {'line': b'running build\n'}
+[1.820583] (robot_control_pkg) StdoutLine: {'line': b'running build_py\n'}
+[1.820736] (robot_control_pkg) StdoutLine: {'line': b'running install\n'}
+[1.829811] (robot_control_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[1.859917] (robot_control_pkg) StderrLine: {'line': b"warning: install_lib: '/home/ubuntu/ros2_ws_clean/build/robot_control_pkg/build/lib' does not exist -- no Python modules to install\n"}
+[1.860163] (robot_control_pkg) StderrLine: {'line': b'\n'}
+[1.860255] (robot_control_pkg) StdoutLine: {'line': b'running install_data\n'}
+[1.860388] (robot_control_pkg) StdoutLine: {'line': b'copying resource/robot_control_pkg -> /home/ubuntu/ros2_ws_clean/install/robot_control_pkg/share/ament_index/resource_index/packages\n'}
+[1.860483] (robot_control_pkg) StdoutLine: {'line': b'copying package.xml -> /home/ubuntu/ros2_ws_clean/install/robot_control_pkg/share/robot_control_pkg\n'}
+[1.860594] (robot_control_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.892286] (robot_control_pkg) StdoutLine: {'line': b'Copying ../../build/robot_control_pkg/robot_control_pkg.egg-info to /home/ubuntu/ros2_ws_clean/install/robot_control_pkg/lib/python3.12/site-packages/robot_control_pkg-1.0.0-py3.12.egg-info\n'}
+[1.893512] (robot_control_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[1.903606] (-) TimerEvent: {}
+[2.003816] (-) TimerEvent: {}
+[2.104040] (-) TimerEvent: {}
+[2.104866] (robot_control_pkg) StdoutLine: {'line': b'Installing robot_control_node script to /home/ubuntu/ros2_ws_clean/install/robot_control_pkg/bin\n'}
+[2.105312] (robot_control_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/ros2_ws_clean/build/robot_control_pkg/install.log'\n"}
+[2.182145] (robot_control_pkg) CommandEnded: {'returncode': 0}
+[2.197826] (robot_control_pkg) JobEnded: {'identifier': 'robot_control_pkg', 'rc': 0}
+[2.198839] (-) EventReactorShutdown: {}

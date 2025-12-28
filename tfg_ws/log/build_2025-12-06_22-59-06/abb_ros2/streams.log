@@ -1,0 +1,23 @@
+[0.026s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_ros2/abb_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_ros2
+[0.172s] -- The C compiler identification is GNU 13.3.0
+[0.318s] -- The CXX compiler identification is GNU 13.3.0
+[0.353s] -- Detecting C compiler ABI info
+[0.574s] -- Detecting C compiler ABI info - done
+[0.592s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.594s] -- Detecting C compile features
+[0.594s] -- Detecting C compile features - done
+[0.612s] -- Detecting CXX compiler ABI info
+[0.848s] -- Detecting CXX compiler ABI info - done
+[0.864s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.864s] -- Detecting CXX compile features
+[0.865s] -- Detecting CXX compile features - done
+[0.882s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.131s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.266s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.321s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.533s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.536s] -- Added test 'lint_cmake' to check CMake code style
+[1.538s] -- Added test 'xmllint' to check XML markup files
+[1.541s] -- Configuring done (1.5s)
+[1.545s] -- Generating done (0.0s)
+[1.548s] -- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_ros2
