@@ -1,0 +1,6 @@
+source;share/abb_control/hook/pythonpath.ps1
+source;share/abb_control/hook/pythonpath.dsv
+source;share/abb_control/hook/pythonpath.sh
+source;share/abb_control/hook/ament_prefix_path.ps1
+source;share/abb_control/hook/ament_prefix_path.dsv
+source;share/abb_control/hook/ament_prefix_path.sh

@@ -1,0 +1,26 @@
+planning_plugins:
+  - ompl_interface/OMPLPlanner
+
+# Adaptadores para limpiar la ruta
+request_adapters:
+  - default_planning_request_adapters/ResolveConstraintFrames
+  - default_planning_request_adapters/ValidateWorkspaceBounds
+  - default_planning_request_adapters/CheckStartStateBounds
+
+# ESTE ES EL NUEVO BLOQUE QUE ARREGLA EL ERROR DE TIEMPO
+response_adapters:
+  - default_planning_response_adapters/AddTimeOptimalParameterization
+
+planner_configs:
+  RRTConnect:
+    type: geometric::RRTConnect
+    range: 0.0
+  RRT:
+    type: geometric::RRT
+    range: 0.0
+
+manipulator:
+  default_planner_config: RRTConnect
+  planner_configs:
+    - RRTConnect
+    - RRT

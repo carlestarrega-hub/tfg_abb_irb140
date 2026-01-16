@@ -1,0 +1,10 @@
+1765062590.9981766 [INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2025-12-07-00-09-50-996826-RaspberryPi-7594
+1765062590.9983878 [INFO] [launch]: Default logging verbosity is set to INFO
+1765062591.2248313 [INFO] [robot_state_publisher-1]: process started with pid [7598]
+1765062591.2251642 [INFO] [joint_state_publisher-2]: process started with pid [7599]
+1765062591.2253790 [INFO] [rosbridge_websocket-3]: process started with pid [7600]
+1765062591.8940489 [joint_state_publisher-2] [INFO] [1765062591.893593816] [joint_state_publisher]: Waiting for robot_description to be published on the robot_description topic...
+1765062997.4106514 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1765062997.5467799 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 7598]
+1765062997.6788266 [INFO] [joint_state_publisher-2]: process has finished cleanly [pid 7599]
+1765062997.7119644 [INFO] [rosbridge_websocket-3]: process has finished cleanly [pid 7600]

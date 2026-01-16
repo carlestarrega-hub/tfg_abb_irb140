@@ -1,0 +1,5 @@
+[INFO] [1765062592.045219010] [rosbridge_websocket]: Rosbridge WebSocket server started on port 9090
+[INFO] [1765062601.031216689] [rosbridge_websocket]: Calling services in new thread
+[INFO] [1765062601.032206413] [rosbridge_websocket]: Sending action goals in new thread
+[INFO] [1765062601.033998306] [rosbridge_websocket]: Client connected. 1 clients total.
+[INFO] [1765062601.111992035] [rosbridge_websocket]: [Client 165a4346-4d7d-4cee-b21c-5c6d083a8eaa] Subscribed to /joint_states

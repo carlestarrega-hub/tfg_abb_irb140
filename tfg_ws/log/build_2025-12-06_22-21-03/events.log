@@ -1,0 +1,158 @@
+[0.000000] (-) TimerEvent: {}
+[0.000372] (abb_hardware_interface) JobQueued: {'identifier': 'abb_hardware_interface', 'dependencies': OrderedDict()}
+[0.000420] (abb_irb1200_5_90_moveit_config) JobQueued: {'identifier': 'abb_irb1200_5_90_moveit_config', 'dependencies': OrderedDict()}
+[0.000444] (abb_irb1200_gazebo) JobQueued: {'identifier': 'abb_irb1200_gazebo', 'dependencies': OrderedDict()}
+[0.000462] (abb_irb120_gazebo) JobQueued: {'identifier': 'abb_irb120_gazebo', 'dependencies': OrderedDict()}
+[0.000479] (abb_resources) JobQueued: {'identifier': 'abb_resources', 'dependencies': OrderedDict()}
+[0.000497] (abb_ros2) JobQueued: {'identifier': 'abb_ros2', 'dependencies': OrderedDict()}
+[0.000513] (abb_bringup) JobQueued: {'identifier': 'abb_bringup', 'dependencies': OrderedDict({'abb_irb1200_5_90_moveit_config': '/home/ubuntu/tfg_ws/install/abb_irb1200_5_90_moveit_config', 'abb_resources': '/home/ubuntu/tfg_ws/install/abb_resources'})}
+[0.000861] (abb_crb15000_support) JobQueued: {'identifier': 'abb_crb15000_support', 'dependencies': OrderedDict({'abb_resources': '/home/ubuntu/tfg_ws/install/abb_resources'})}
+[0.000883] (abb_rws_client) JobQueued: {'identifier': 'abb_rws_client', 'dependencies': OrderedDict({'abb_hardware_interface': '/home/ubuntu/tfg_ws/install/abb_hardware_interface'})}
+[0.000902] (abb) JobQueued: {'identifier': 'abb', 'dependencies': OrderedDict({'abb_resources': '/home/ubuntu/tfg_ws/install/abb_resources', 'abb_crb15000_support': '/home/ubuntu/tfg_ws/install/abb_crb15000_support'})}
+[0.000924] (abb_resources) JobStarted: {'identifier': 'abb_resources'}
+[0.008549] (abb_hardware_interface) JobStarted: {'identifier': 'abb_hardware_interface'}
+[0.013753] (abb_irb1200_5_90_moveit_config) JobStarted: {'identifier': 'abb_irb1200_5_90_moveit_config'}
+[0.019348] (abb_irb1200_gazebo) JobStarted: {'identifier': 'abb_irb1200_gazebo'}
+[0.026309] (abb_resources) JobProgress: {'identifier': 'abb_resources', 'progress': 'cmake'}
+[0.027046] (abb_resources) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/tfg_ws/src/abb_ros2/abb_resources', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_resources'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_resources', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_resources', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.030402] (abb_hardware_interface) JobProgress: {'identifier': 'abb_hardware_interface', 'progress': 'cmake'}
+[0.030977] (abb_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/tfg_ws/src/abb_ros2/abb_hardware_interface', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_hardware_interface'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_hardware_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_hardware_interface', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.033259] (abb_irb1200_5_90_moveit_config) JobProgress: {'identifier': 'abb_irb1200_5_90_moveit_config', 'progress': 'cmake'}
+[0.034781] (abb_irb1200_5_90_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/tfg_ws/src/abb_ros2/robot_specific_config/abb_irb1200_5_90_moveit_config', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_irb1200_5_90_moveit_config'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_irb1200_5_90_moveit_config', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_irb1200_5_90_moveit_config', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.044731] (abb_irb1200_gazebo) JobProgress: {'identifier': 'abb_irb1200_gazebo', 'progress': 'cmake'}
+[0.044873] (abb_irb1200_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/tfg_ws/src/abb_description/gazebo/abb_irb1200_gazebo', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_irb1200_gazebo'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_irb1200_gazebo', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_irb1200_gazebo', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}), 'shell': False}
+[0.063239] (abb_irb1200_gazebo) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.063644] (abb_irb1200_gazebo) StderrLine: {'line': b'  Compatibility with CMake < 3.5 will be removed from a future version of\n'}
+[0.063803] (abb_irb1200_gazebo) StderrLine: {'line': b'  CMake.\n'}
+[0.063912] (abb_irb1200_gazebo) StderrLine: {'line': b'\n'}
+[0.064037] (abb_irb1200_gazebo) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.064153] (abb_irb1200_gazebo) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.064242] (abb_irb1200_gazebo) StderrLine: {'line': b'\n'}
+[0.064445] (abb_irb1200_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[0.100703] (-) TimerEvent: {}
+[0.193475] (abb_resources) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.193905] (abb_hardware_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.197709] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.202602] (-) TimerEvent: {}
+[0.207869] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.302992] (-) TimerEvent: {}
+[0.347850] (abb_resources) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.351032] (abb_hardware_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.354779] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.375400] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.381655] (abb_resources) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.382032] (abb_hardware_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.386469] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.405233] (-) TimerEvent: {}
+[0.411452] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.505409] (-) TimerEvent: {}
+[0.598606] (abb_hardware_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.601852] (abb_resources) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.605595] (-) TimerEvent: {}
+[0.617664] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.619764] (abb_resources) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.620336] (abb_resources) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.621179] (abb_resources) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.628570] (abb_hardware_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.629102] (abb_hardware_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.629893] (abb_hardware_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.637136] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.637584] (abb_resources) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.641489] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.641851] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.642108] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.646146] (abb_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.657952] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.658742] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.659635] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.660916] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.680091] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.707838] (-) TimerEvent: {}
+[0.808319] (-) TimerEvent: {}
+[0.888752] (abb_resources) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.896054] (abb_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.908624] (-) TimerEvent: {}
+[0.910807] (abb_resources) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.911510] (abb_resources) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.911863] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.912366] (abb_resources) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.917352] (abb_resources) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.918592] (abb_hardware_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.919276] (abb_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.921690] (abb_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.925421] (abb_hardware_interface) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.927864] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.928302] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.929185] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.930755] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.933503] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.949638] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.951579] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.952041] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.962840] (abb_irb1200_gazebo) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.963292] (abb_irb1200_gazebo) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.964232] (abb_irb1200_gazebo) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.964471] (abb_irb1200_gazebo) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.964636] (abb_irb1200_gazebo) StderrLine: {'line': b'\n'}
+[0.964778] (abb_irb1200_gazebo) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.964900] (abb_irb1200_gazebo) StderrLine: {'line': b'  of the following names:\n'}
+[0.965029] (abb_irb1200_gazebo) StderrLine: {'line': b'\n'}
+[0.965149] (abb_irb1200_gazebo) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.965265] (abb_irb1200_gazebo) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.965376] (abb_irb1200_gazebo) StderrLine: {'line': b'\n'}
+[0.965493] (abb_irb1200_gazebo) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.965648] (abb_irb1200_gazebo) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.965755] (abb_irb1200_gazebo) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.965851] (abb_irb1200_gazebo) StderrLine: {'line': b'  installed.\n'}
+[0.965944] (abb_irb1200_gazebo) StderrLine: {'line': b'\n'}
+[0.966036] (abb_irb1200_gazebo) StderrLine: {'line': b'\x1b[0m\n'}
+[0.966129] (abb_irb1200_gazebo) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.982652] (abb_irb1200_gazebo) CommandEnded: {'returncode': 1}
+[1.011281] (-) TimerEvent: {}
+[1.025967] (abb_irb1200_gazebo) JobEnded: {'identifier': 'abb_irb1200_gazebo', 'rc': 1}
+[1.111423] (-) TimerEvent: {}
+[1.212005] (-) TimerEvent: {}
+[1.217284] (abb_resources) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.227173] (abb_hardware_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.240951] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.312119] (-) TimerEvent: {}
+[1.379487] (abb_resources) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.390290] (abb_hardware_interface) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.400791] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.412215] (-) TimerEvent: {}
+[1.448742] (abb_hardware_interface) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:33 (find_package):\n'}
+[1.449105] (abb_hardware_interface) StderrLine: {'line': b'  By not providing "Findabb_egm_rws_managers.cmake" in CMAKE_MODULE_PATH this\n'}
+[1.449231] (abb_hardware_interface) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[1.449338] (abb_hardware_interface) StderrLine: {'line': b'  "abb_egm_rws_managers", but CMake did not find one.\n'}
+[1.449461] (abb_hardware_interface) StderrLine: {'line': b'\n'}
+[1.449758] (abb_hardware_interface) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[1.449911] (abb_hardware_interface) StderrLine: {'line': b'  "abb_egm_rws_managers" with any of the following names:\n'}
+[1.450025] (abb_hardware_interface) StderrLine: {'line': b'\n'}
+[1.450134] (abb_hardware_interface) StderrLine: {'line': b'    abb_egm_rws_managersConfig.cmake\n'}
+[1.450296] (abb_hardware_interface) StderrLine: {'line': b'    abb_egm_rws_managers-config.cmake\n'}
+[1.450441] (abb_hardware_interface) StderrLine: {'line': b'\n'}
+[1.450709] (abb_hardware_interface) StderrLine: {'line': b'  Add the installation prefix of "abb_egm_rws_managers" to CMAKE_PREFIX_PATH\n'}
+[1.450855] (abb_hardware_interface) StderrLine: {'line': b'  or set "abb_egm_rws_managers_DIR" to a directory containing one of the\n'}
+[1.450981] (abb_hardware_interface) StderrLine: {'line': b'  above files.  If "abb_egm_rws_managers" provides a separate development\n'}
+[1.451091] (abb_hardware_interface) StderrLine: {'line': b'  package or SDK, be sure it has been installed.\n'}
+[1.451187] (abb_hardware_interface) StderrLine: {'line': b'\n'}
+[1.451274] (abb_hardware_interface) StderrLine: {'line': b'\x1b[0m\n'}
+[1.451366] (abb_hardware_interface) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.458731] (abb_hardware_interface) JobEnded: {'identifier': 'abb_hardware_interface', 'rc': 'SIGINT'}
+[1.512319] (-) TimerEvent: {}
+[1.606912] (abb_resources) StdoutLine: {'line': b'-- Configuring done (1.6s)\n'}
+[1.611486] (abb_resources) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.612395] (-) TimerEvent: {}
+[1.614168] (abb_resources) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_resources\n'}
+[1.624587] (abb_resources) JobEnded: {'identifier': 'abb_resources', 'rc': 'SIGINT'}
+[1.630311] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Configuring done (1.6s)\n'}
+[1.634273] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.636575] (abb_irb1200_5_90_moveit_config) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_irb1200_5_90_moveit_config\n'}
+[1.645119] (abb_irb1200_5_90_moveit_config) JobEnded: {'identifier': 'abb_irb1200_5_90_moveit_config', 'rc': 'SIGINT'}
+[1.646350] (abb_irb120_gazebo) JobSkipped: {'identifier': 'abb_irb120_gazebo'}
+[1.646385] (abb_ros2) JobSkipped: {'identifier': 'abb_ros2'}
+[1.646403] (abb_bringup) JobSkipped: {'identifier': 'abb_bringup'}
+[1.646419] (abb_crb15000_support) JobSkipped: {'identifier': 'abb_crb15000_support'}
+[1.646435] (abb_rws_client) JobSkipped: {'identifier': 'abb_rws_client'}
+[1.646450] (abb) JobSkipped: {'identifier': 'abb'}
+[1.646467] (-) EventReactorShutdown: {}

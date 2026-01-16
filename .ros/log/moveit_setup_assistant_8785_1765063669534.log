@@ -1,0 +1,25 @@
+[INFO] [1765063782.189753546] [moveit_setup_assistant.urdf]: Loaded abb_irb140 robot model.
+[INFO] [1765063782.199383666] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765063782.199444944] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765063782.199493944] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765063782.199569759] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links
+[INFO] [1765063805.643223651] [moveit_setup_assistant.urdf]: Loaded abb_irb140 robot model.
+[INFO] [1765063805.643375836] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765063805.643429392] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765063805.643471651] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765063805.643521188] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links
+[INFO] [1765063806.521114403] [moveit_3196896965.moveit.ros.rdf_loader]: Loaded robot model in 0.00111596 seconds
+[INFO] [1765063806.521182699] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765063806.521209199] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765063806.521240459] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765063806.521290088] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links
+[INFO] [1765063806.526775519] [moveit_3196896965.moveit.ros.rdf_loader]: Loaded robot model in 0.000760927 seconds
+[INFO] [1765063806.526840575] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765063806.526865519] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765063806.526893630] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765063806.526933316] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links
+[INFO] [1765063806.826382017] [moveit_setup_assistant.Start Screen]: Loading Setup Assistant Complete
+[INFO] [1765064600.626909702] [moveit_3196896965.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765064600.627027683] [moveit_3196896965.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765064600.627072257] [moveit_3196896965.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064600.627115276] [moveit_3196896965.moveit.core.robot_model]: No geometry is associated to any robot links

@@ -1,0 +1,533 @@
+[0.138s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.139s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa06dbbf0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa08c4260>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa08c4260>>)
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.195s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/tfg_ws'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_egm_rws_managers) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_egm_rws_managers' with type 'ros.cmake' and name 'abb_egm_rws_managers'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_irb140_support) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_irb140_support) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_irb140_support) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_irb140_support) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_irb140_support) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_irb140_support) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_irb140_support) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_irb140_support) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_irb140_support) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_irb140_support' with type 'ros.ament_cmake' and name 'abb_irb140_support'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_libegm) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_libegm' with type 'ros.cmake' and name 'abb_libegm'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_librws) by extension 'ros'
+[0.241s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_librws' with type 'ros.cmake' and name 'abb_librws'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'ros'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['cmake', 'python']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'cmake'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'python'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extensions ['python_setup_py']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2) by extension 'python_setup_py'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_bringup) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_bringup' with type 'ros.ament_cmake' and name 'abb_bringup'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_hardware_interface) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_hardware_interface' with type 'ros.ament_cmake' and name 'abb_hardware_interface'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_resources) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_resources' with type 'ros.ament_cmake' and name 'abb_resources'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_ros2) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_ros2' with type 'ros.ament_cmake' and name 'abb_ros2'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/abb_rws_client) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abb_ros2/abb_rws_client' with type 'ros.ament_cmake' and name 'abb_rws_client'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['cmake', 'python']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'cmake'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'python'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extensions ['python_setup_py']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs) by extension 'python_setup_py'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'ros'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/docs/images) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_specific_config) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'ros'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['cmake', 'python']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'cmake'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'python'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extensions ['python_setup_py']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources) by extension 'python_setup_py'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'ros'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['cmake', 'python']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'cmake'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'python'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extensions ['python_setup_py']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/abb_ros2/robot_studio_resources/velocity_control_example) by extension 'python_setup_py'
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.279s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/ubuntu/tfg_ws/install
+[0.282s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 386 installed packages in /opt/ros/jazzy
+[0.285s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_args' from command line to 'None'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_target' from command line to 'None'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_clean_first' from command line to 'False'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'cmake_force_configure' from command line to 'False'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'ament_cmake_args' from command line to 'None'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.361s] Level 5:colcon.colcon_core.verb:set package 'abb_libegm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.361s] DEBUG:colcon.colcon_core.verb:Building package 'abb_libegm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/tfg_ws/build/abb_libegm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/tfg_ws/install/abb_libegm', 'merge_install': False, 'path': '/home/ubuntu/tfg_ws/src/abb_libegm', 'symlink_install': True, 'test_result_base': None}
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_args' from command line to 'None'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_target' from command line to 'None'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_clean_cache' from command line to 'False'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_clean_first' from command line to 'False'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'cmake_force_configure' from command line to 'False'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'ament_cmake_args' from command line to 'None'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'catkin_cmake_args' from command line to 'None'
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_librws' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.362s] DEBUG:colcon.colcon_core.verb:Building package 'abb_librws' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/tfg_ws/build/abb_librws', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/tfg_ws/install/abb_librws', 'merge_install': False, 'path': '/home/ubuntu/tfg_ws/src/abb_librws', 'symlink_install': True, 'test_result_base': None}
+[0.362s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_target' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_clean_cache' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_clean_first' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'cmake_force_configure' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'ament_cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'catkin_cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_resources' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.363s] DEBUG:colcon.colcon_core.verb:Building package 'abb_resources' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/tfg_ws/build/abb_resources', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/tfg_ws/install/abb_resources', 'merge_install': False, 'path': '/home/ubuntu/tfg_ws/src/abb_ros2/abb_resources', 'symlink_install': True, 'test_result_base': None}
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_target' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.363s] Level 5:colcon.colcon_core.verb:set package 'abb_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.363s] DEBUG:colcon.colcon_core.verb:Building package 'abb_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/tfg_ws/build/abb_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/tfg_ws/install/abb_ros2', 'merge_install': False, 'path': '/home/ubuntu/tfg_ws/src/abb_ros2/abb_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_target' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.364s] DEBUG:colcon.colcon_core.verb:Building package 'abb_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/tfg_ws/build/abb_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/tfg_ws/install/abb_bringup', 'merge_install': False, 'path': '/home/ubuntu/tfg_ws/src/abb_ros2/abb_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_target' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_clean_first' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'cmake_force_configure' from command line to 'False'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'ament_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.364s] Level 5:colcon.colcon_core.verb:set package 'abb_egm_rws_managers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.364s] DEBUG:colcon.colcon_core.verb:Building package 'abb_egm_rws_managers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers', 'merge_install': False, 'path': '/home/ubuntu/tfg_ws/src/abb_egm_rws_managers', 'symlink_install': True, 'test_result_base': None}
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_irb140_support' build argument 'cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_irb140_support' build argument 'cmake_target' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_irb140_support' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_irb140_support' build argument 'cmake_clean_cache' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_irb140_support' build argument 'cmake_clean_first' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_irb140_support' build argument 'cmake_force_configure' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_irb140_support' build argument 'ament_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_irb140_support' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_irb140_support' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'abb_irb140_support' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/tfg_ws/build/abb_irb140_support', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/tfg_ws/install/abb_irb140_support', 'merge_install': False, 'path': '/home/ubuntu/tfg_ws/src/abb_irb140_support', 'symlink_install': True, 'test_result_base': None}
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_target' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.365s] Level 5:colcon.colcon_core.verb:set package 'abb_hardware_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.365s] DEBUG:colcon.colcon_core.verb:Building package 'abb_hardware_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/tfg_ws/build/abb_hardware_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/tfg_ws/install/abb_hardware_interface', 'merge_install': False, 'path': '/home/ubuntu/tfg_ws/src/abb_ros2/abb_hardware_interface', 'symlink_install': True, 'test_result_base': None}
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_target' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_clean_cache' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_clean_first' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'cmake_force_configure' from command line to 'False'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'ament_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'catkin_cmake_args' from command line to 'None'
+[0.366s] Level 5:colcon.colcon_core.verb:set package 'abb_rws_client' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.366s] DEBUG:colcon.colcon_core.verb:Building package 'abb_rws_client' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/tfg_ws/build/abb_rws_client', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/tfg_ws/install/abb_rws_client', 'merge_install': False, 'path': '/home/ubuntu/tfg_ws/src/abb_ros2/abb_rws_client', 'symlink_install': True, 'test_result_base': None}
+[0.366s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.367s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.368s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/ubuntu/tfg_ws/src/abb_libegm' with build type 'cmake'
+[0.368s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/tfg_ws/src/abb_libegm'
+[0.370s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.370s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.370s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.376s] INFO:colcon.colcon_ros.task.cmake.build:Building ROS package in '/home/ubuntu/tfg_ws/src/abb_librws' with build type 'cmake'
+[0.376s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/tfg_ws/src/abb_librws'
+[0.376s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.376s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.381s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/tfg_ws/src/abb_ros2/abb_resources' with build type 'ament_cmake'
+[0.382s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/tfg_ws/src/abb_ros2/abb_resources'
+[0.382s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.382s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.388s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/tfg_ws/src/abb_ros2/abb_ros2' with build type 'ament_cmake'
+[0.388s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/tfg_ws/src/abb_ros2/abb_ros2'
+[0.389s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.389s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_libegm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_libegm -- -j4 -l4
+[0.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_librws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_librws -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_librws
+[0.407s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_resources': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_resources -- -j4 -l4
+[0.418s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_ros2 -- -j4 -l4
+[0.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_resources' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_resources -- -j4 -l4
+[0.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_resources': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_resources
+[0.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_ros2 -- -j4 -l4
+[0.538s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_ros2
+[0.582s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abb_resources)
+[0.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_resources' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_resources
+[0.586s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources' for CMake module files
+[0.588s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources' for CMake config files
+[0.589s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_resources', 'cmake_prefix_path')
+[0.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/hook/cmake_prefix_path.ps1'
+[0.590s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/hook/cmake_prefix_path.dsv'
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/hook/cmake_prefix_path.sh'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources/bin'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources/lib/pkgconfig/abb_resources.pc'
+[0.593s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources/lib/python3.12/site-packages'
+[0.593s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources/bin'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.ps1'
+[0.595s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.dsv'
+[0.596s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.sh'
+[0.597s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.bash'
+[0.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.zsh'
+[0.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/tfg_ws/install/abb_resources/share/colcon-core/packages/abb_resources)
+[0.603s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abb_resources)
+[0.604s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources' for CMake module files
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources' for CMake config files
+[0.605s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_resources', 'cmake_prefix_path')
+[0.605s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/hook/cmake_prefix_path.ps1'
+[0.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/hook/cmake_prefix_path.dsv'
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/hook/cmake_prefix_path.sh'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources/bin'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources/lib/pkgconfig/abb_resources.pc'
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources/lib/python3.12/site-packages'
+[0.609s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_resources/bin'
+[0.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.ps1'
+[0.610s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.dsv'
+[0.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.sh'
+[0.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.bash'
+[0.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.zsh'
+[0.614s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/tfg_ws/install/abb_resources/share/colcon-core/packages/abb_resources)
+[0.615s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/tfg_ws/src/abb_ros2/abb_bringup' with build type 'ament_cmake'
+[0.615s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/tfg_ws/src/abb_ros2/abb_bringup'
+[0.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.623s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abb_ros2)
+[0.624s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2' for CMake module files
+[0.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_ros2
+[0.625s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2' for CMake config files
+[0.626s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_ros2', 'cmake_prefix_path')
+[0.626s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/hook/cmake_prefix_path.ps1'
+[0.627s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/hook/cmake_prefix_path.dsv'
+[0.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/hook/cmake_prefix_path.sh'
+[0.629s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2/bin'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2/lib/pkgconfig/abb_ros2.pc'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2/lib/python3.12/site-packages'
+[0.631s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2/bin'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.ps1'
+[0.632s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.dsv'
+[0.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.sh'
+[0.633s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.bash'
+[0.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.zsh'
+[0.635s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/tfg_ws/install/abb_ros2/share/colcon-core/packages/abb_ros2)
+[0.635s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abb_ros2)
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2' for CMake module files
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2' for CMake config files
+[0.637s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_ros2', 'cmake_prefix_path')
+[0.637s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/hook/cmake_prefix_path.ps1'
+[0.638s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/hook/cmake_prefix_path.dsv'
+[0.638s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/hook/cmake_prefix_path.sh'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2/bin'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2/lib/pkgconfig/abb_ros2.pc'
+[0.639s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2/lib/python3.12/site-packages'
+[0.640s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_ros2/bin'
+[0.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.ps1'
+[0.641s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.dsv'
+[0.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.sh'
+[0.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.bash'
+[0.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.zsh'
+[0.646s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/tfg_ws/install/abb_ros2/share/colcon-core/packages/abb_ros2)
+[0.648s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/tfg_ws/src/abb_irb140_support' with build type 'ament_cmake'
+[0.648s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/tfg_ws/src/abb_irb140_support'
+[0.648s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.648s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_bringup': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_bringup -- -j4 -l4
+[0.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_libegm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_libegm -- -j4 -l4
+[0.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_libegm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_libegm
+[0.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb140_support': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_irb140_support -- -j4 -l4
+[0.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_libegm', 'pkg_config_path')
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/pkg_config_path.ps1'
+[0.695s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/pkg_config_path.dsv'
+[0.696s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_libegm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_libegm
+[0.696s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/pkg_config_path.sh'
+[0.700s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_libegm', 'pkg_config_path_multiarch')
+[0.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/pkg_config_path_multiarch.ps1'
+[0.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/pkg_config_path_multiarch.dsv'
+[0.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/pkg_config_path_multiarch.sh'
+[0.705s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abb_libegm)
+[0.705s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_libegm' for CMake module files
+[0.706s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_libegm' for CMake config files
+[0.707s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_libegm', 'cmake_prefix_path')
+[0.707s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/cmake_prefix_path.ps1'
+[0.708s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/cmake_prefix_path.dsv'
+[0.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/cmake_prefix_path.sh'
+[0.711s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_libegm/lib'
+[0.711s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_libegm', 'ld_library_path_lib')
+[0.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/ld_library_path_lib.ps1'
+[0.712s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/ld_library_path_lib.dsv'
+[0.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/hook/ld_library_path_lib.sh'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_libegm/bin'
+[0.715s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig/abb_libegm.pc'
+[0.716s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_libegm/lib/python3.12/site-packages'
+[0.717s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_libegm/bin'
+[0.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/package.ps1'
+[0.719s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/package.dsv'
+[0.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/package.sh'
+[0.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/package.bash'
+[0.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/package.zsh'
+[0.723s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/tfg_ws/install/abb_libegm/share/colcon-core/packages/abb_libegm)
+[0.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb140_support' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_irb140_support -- -j4 -l4
+[0.772s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb140_support': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_irb140_support
+[0.814s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abb_irb140_support)
+[0.814s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support' for CMake module files
+[0.815s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb140_support' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_irb140_support
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support' for CMake config files
+[0.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_irb140_support', 'cmake_prefix_path')
+[0.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/hook/cmake_prefix_path.ps1'
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/hook/cmake_prefix_path.dsv'
+[0.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/hook/cmake_prefix_path.sh'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support/bin'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support/lib/pkgconfig/abb_irb140_support.pc'
+[0.823s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support/lib/python3.12/site-packages'
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support/bin'
+[0.824s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.ps1'
+[0.826s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.dsv'
+[0.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.sh'
+[0.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.bash'
+[0.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.zsh'
+[0.829s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/tfg_ws/install/abb_irb140_support/share/colcon-core/packages/abb_irb140_support)
+[0.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abb_irb140_support)
+[0.831s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support' for CMake module files
+[0.831s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support' for CMake config files
+[0.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('abb_irb140_support', 'cmake_prefix_path')
+[0.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/hook/cmake_prefix_path.ps1'
+[0.832s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/hook/cmake_prefix_path.dsv'
+[0.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/hook/cmake_prefix_path.sh'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support/bin'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support/lib/pkgconfig/abb_irb140_support.pc'
+[0.834s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support/lib/python3.12/site-packages'
+[0.835s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_irb140_support/bin'
+[0.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.ps1'
+[0.836s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.dsv'
+[0.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.sh'
+[0.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.bash'
+[0.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.zsh'
+[0.838s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/tfg_ws/install/abb_irb140_support/share/colcon-core/packages/abb_irb140_support)
+[0.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_librws' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_librws -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_librws
+[0.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/tfg_ws/build/abb_bringup' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_bringup -- -j4 -l4
+[0.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/tfg_ws/build/abb_bringup': AMENT_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_bringup
+[0.863s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abb_librws)
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_librws' for CMake module files
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_librws' for CMake config files
+[0.864s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_librws/bin'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig/abb_librws.pc'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_librws/lib/python3.12/site-packages'
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/tfg_ws/install/abb_librws/bin'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/package.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/package.dsv'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/package.sh'
+[0.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/package.bash'
+[0.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/package.zsh'
+[0.869s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/tfg_ws/install/abb_librws/share/colcon-core/packages/abb_librws)
+[0.895s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.895s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.895s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[0.895s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.905s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.905s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.905s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.905s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.906s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[0.906s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.907s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/tfg_ws/install/local_setup.ps1'
+[0.908s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/tfg_ws/install/_local_setup_util_ps1.py'
+[0.909s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/tfg_ws/install/setup.ps1'
+[0.910s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/tfg_ws/install/local_setup.sh'
+[0.914s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/tfg_ws/install/_local_setup_util_sh.py'
+[0.915s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/tfg_ws/install/setup.sh'
+[0.916s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/tfg_ws/install/local_setup.bash'
+[0.916s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/tfg_ws/install/setup.bash'
+[0.917s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/tfg_ws/install/local_setup.zsh'
+[0.918s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/tfg_ws/install/setup.zsh'

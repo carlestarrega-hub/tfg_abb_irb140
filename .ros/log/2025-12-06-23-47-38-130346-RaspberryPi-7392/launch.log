@@ -1,0 +1,5 @@
+1765061258.1317344 [INFO] [launch]: All log files can be found below /home/ubuntu/.ros/log/2025-12-06-23-47-38-130346-RaspberryPi-7392
+1765061258.1319408 [INFO] [launch]: Default logging verbosity is set to INFO
+1765061258.1945560 [ERROR] [launch]: Caught exception in launch (see debug for traceback): Caught multiple exceptions when trying to load file of format [py]:
+ - ImportError: cannot import name 'XmlLaunchDescriptionSource' from 'launch_xml.launch_description_sources' (/opt/ros/jazzy/lib/python3.12/site-packages/launch_xml/launch_description_sources/__init__.py)
+ - InvalidFrontendLaunchFileError: The launch file may have a syntax error, or its format is unknown

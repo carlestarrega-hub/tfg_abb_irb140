@@ -1,0 +1,19 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/ament_index/resource_index/package_run_dependencies/abb_resources
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/ament_index/resource_index/parent_prefix_path/abb_resources
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/environment/ament_prefix_path.sh
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/environment/ament_prefix_path.dsv
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/environment/path.sh
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/environment/path.dsv
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/local_setup.bash
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/local_setup.sh
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/local_setup.zsh
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/local_setup.dsv
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.dsv
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/ament_index/resource_index/packages/abb_resources
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/cmake/abb_resourcesConfig.cmake
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/cmake/abb_resourcesConfig-version.cmake
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.xml
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/urdf/common_colours.xacro
+-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/urdf/common_materials.xacro

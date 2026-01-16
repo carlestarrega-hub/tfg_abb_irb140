@@ -1,0 +1,41 @@
+-- Searching for Poco library...
+--   Found Poco!
+-- components found: Foundation, Net, Util, XML.
+-- Found Protobuf: /usr/lib/aarch64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+-- Generating protobuf C++ for: proto/robot_controller_description.proto
+-- abb_egm_rws_managers: Defaulting build type to RelWithDebInfo
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+-- Configuring done (0.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_egm_rws_managers
+[ 14%] [34m[1mRunning cpp protocol buffer compiler on proto/robot_controller_description.proto[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/rws_manager.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/utilities.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/egm_manager.cpp.o[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/system_data_parser.cpp.o[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/robot_controller_description.pb.cc.o[0m
+[100%] [32m[1mLinking CXX shared library libabb_egm_rws_managers.so[0m
+[100%] Built target abb_egm_rws_managers
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/rws_manager.h
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/system_data_parser.h
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/utilities.h
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/data_containers.h
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/egm_manager.h
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/robot_controller_description.proto
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/robot_controller_description.pb.h
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/abb_egm_rws_managers_export.h
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersConfig.cmake
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersConfigVersion.cmake
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/package.xml
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/libabb_egm_rws_managers.so
+-- Set non-toolchain portion of runtime path of "/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/libabb_egm_rws_managers.so" to ""
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersTargets.cmake
+-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersTargets-relwithdebinfo.cmake
