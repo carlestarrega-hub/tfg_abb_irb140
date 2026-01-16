@@ -7,7 +7,7 @@
 
 <style>
   body { font-family: 'Segoe UI', sans-serif; background-color: #eef2f5; text-align: center; padding: 20px; }
-  
+   
   .panel { 
     background: white; 
     padding: 30px; 
@@ -20,7 +20,7 @@
 
   h1 { margin-top: 0; color: #333; font-size: 24px; text-transform: uppercase; letter-spacing: 1px;}
   h3 { margin-bottom: 10px; color: #555; border-bottom: 2px solid #eee; padding-bottom: 5px; font-size: 18px;}
-  
+   
   /* Inputs de Posición */
   label { font-weight: bold; color: #666; margin-right: 5px; }
   input[type=number] { 
@@ -70,30 +70,48 @@
     box-shadow: 0 0 0 #a71d2a; 
   }
 
-  /* Estado */
+  /* Estado Conexión */
   #statusIndicator { display:inline-block; width:15px; height:15px; border-radius:50%; background-color:red; margin-right:5px; vertical-align: middle; }
   #statusText { font-weight: bold; vertical-align: middle; }
   .status-bar { background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #eee;}
+
+  /* --- NUEVOS ESTILOS PARA ALERTAS --- */
+  #alertBox { 
+      padding: 15px; margin-bottom: 20px; border-radius: 8px; font-weight: bold; display: none; 
+      transition: all 0.3s ease; text-align: left;
+  }
+  .alert-success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+  .alert-error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+  .alert-info { background-color: #cce5ff; color: #004085; border: 1px solid #b8daff; }
+
+  /* --- NUEVOS ESTILOS PARA INSTRUCCIONES MANUALES --- */
+  .cmd-container { display:flex; justify-content: space-between; margin-top: 10px; }
+  input[type=text] { width: 65%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-family: monospace; }
+  .btn-cmd { width: 30%; background-color: #6c757d; font-size: 14px; padding: 10px; box-shadow: 0 4px 0 #545b62; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;}
+  .btn-cmd:active { transform: translateY(2px); box-shadow: none; }
 
 </style>
 
 <script type="text/javascript">
   var ros;
   var ordenTopic;
+  var feedbackTopic;
 
   function init() {
     // 1. Conectar con ROS
-    ros = new ROSLIB.Ros({ url : 'ws://localhost:9090' });
+    ros = new ROSLIB.Ros({ url : 'ws://192.168.1.136:9090' });
 
     ros.on('connection', function() {
         document.getElementById("statusIndicator").style.backgroundColor = "#28a745"; // Verde
         document.getElementById("statusText").innerHTML = "CONECTADO";
         document.getElementById("statusText").style.color = "#28a745";
+        showMsg("INFO: Conexión establecida. Listo.", "info");
     });
 
     ros.on('error', function(error) {
         document.getElementById("statusIndicator").style.backgroundColor = "orange";
         document.getElementById("statusText").innerHTML = "ERROR DE CONEXIÓN";
+        showMsg("ERROR: No se puede conectar con ROS", "error");
     });
 
     ros.on('close', function() {
@@ -102,12 +120,39 @@
         document.getElementById("statusText").style.color = "red";
     });
 
-    // 2. Definir el Tópico
+    // 2. Definir los Tópicos
     ordenTopic = new ROSLIB.Topic({
       ros : ros,
       name : '/orden_web',
       messageType : 'std_msgs/String'
     });
+
+    // Escuchar Feedback (Respuestas del robot)
+    feedbackTopic = new ROSLIB.Topic({
+      ros : ros,
+      name : '/web_feedback',
+      messageType : 'std_msgs/String'
+    });
+    
+    feedbackTopic.subscribe(function(msg) {
+        var texto = msg.data;
+        if (texto.includes("ERROR")) {
+            showMsg(texto, "error");
+        } else if (texto.includes("EXITO")) {
+            showMsg(texto, "success");
+        } else {
+            showMsg(texto, "info");
+        }
+    });
+  }
+
+  // Función auxiliar para mostrar alertas
+  function showMsg(txt, type) {
+      var box = document.getElementById("alertBox");
+      box.style.display = "block";
+      box.className = ""; // Limpiar clases
+      box.classList.add("alert-" + type);
+      box.innerHTML = txt;
   }
 
   function updateDisplay(id, val) {
@@ -131,23 +176,26 @@
     console.log("Enviado: " + comando);
   }
 
+  // FUNCIÓN PARA ENVIAR INSTRUCCIÓN MANUAL
+  function enviarInstruccion() {
+      var texto = document.getElementById("cmdInput").value;
+      ordenTopic.publish(new ROSLIB.Message({ data : texto }));
+  }
+
   // 🏠 FUNCIÓN POSICIÓN INICIAL
   function irAHome() {
-    // 1. Poner los valores en los inputs visualmente
     document.getElementById("posX").value = 0.4;
     document.getElementById("posY").value = 0.0;
     document.getElementById("posZ").value = 0.5;
-    
+     
     document.getElementById("sl_roll").value = 0;
     document.getElementById("sl_pitch").value = 0;
     document.getElementById("sl_yaw").value = 0;
 
-    // Actualizar los numeritos de los sliders
     updateDisplay('disp_roll', 0);
     updateDisplay('disp_pitch', 0);
     updateDisplay('disp_yaw', 0);
 
-    // 2. Enviar la orden al robot
     enviarCoordenadas();
   }
 
@@ -168,13 +216,15 @@
     <button class="btn-stop" onclick="paradaEmergencia()">STOP</button>
 
     <h1>🤖 Control de ABB IRB140</h1>
-    
+     
     <div class="status-bar">
         <span id="statusIndicator"></span>
         <span id="statusText">Esperando...</span>
     </div>
 
-    <h3>📍 Coordenadas</h3>
+    <div id="alertBox">Sistema listo.</div>
+
+    <h3>📍 Coordenadas (Metros)</h3>
     <div style="margin-bottom: 20px;">
       <label>X</label> <input type="number" id="posX" value="0.5" step="0.1">
       <label>Y</label> <input type="number" id="posY" value="0.0" step="0.1">
@@ -205,6 +255,13 @@
 
     <button class="btn btn-home" onclick="irAHome()">⌂ POSICIÓN INICIAL</button>
     <button class="btn" onclick="enviarCoordenadas()">🚀 EJECUTAR MOVIMIENTO</button>
+
+    <hr>
+    <h3>⌨️ Instrucciones Manuales</h3>
+    <div class="cmd-container">
+        <input type="text" id="cmdInput" placeholder="Ej: MOVE:0.5,0,0.5,0,0,0">
+        <button class="btn-cmd" onclick="enviarInstruccion()">ENVIAR</button>
+    </div>
 
   </div>
 
