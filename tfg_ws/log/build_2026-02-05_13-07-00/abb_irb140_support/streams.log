@@ -1,0 +1,51 @@
+[0.095s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb140_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_irb140_support -- -j4 -l4
+[0.419s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.241s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.350s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[2.556s] -- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2
+[2.627s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[3.460s] -- Configuring done (3.1s)
+[3.505s] -- Generating done (0.0s)
+[3.519s] -- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_irb140_support
+[3.694s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb140_support' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_irb140_support -- -j4 -l4
+[3.762s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb140_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_irb140_support
+[3.817s] -- Install configuration: ""
+[3.819s] -- Execute custom install script
+[3.822s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/launch/display_irb140.launch.py
+[3.823s] -- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/common_materials.xacro
+[3.889s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140.urdf.xacro
+[3.890s] -- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140.xacro
+[3.951s] -- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140_macro.xacro
+[4.015s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140_moveit.urdf
+[4.016s] -- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140_real.urdf
+[4.088s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/test_cube.urdf.xacro
+[4.093s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/base_link.stl
+[4.094s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_1.stl
+[4.098s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_2.stl
+[4.099s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_3.stl
+[4.100s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_4.stl
+[4.105s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_5.stl
+[4.109s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_6.stl
+[4.110s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/base_link.stl
+[4.112s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_1.stl
+[4.114s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_2.stl
+[4.115s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_3.stl
+[4.117s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_4.stl
+[4.119s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_5.stl
+[4.120s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_6.stl
+[4.121s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/package_run_dependencies/abb_irb140_support
+[4.122s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/parent_prefix_path/abb_irb140_support
+[4.123s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.sh
+[4.125s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.dsv
+[4.127s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.sh
+[4.128s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.dsv
+[4.129s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.bash
+[4.131s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.sh
+[4.132s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.zsh
+[4.134s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.dsv
+[4.136s] -- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.dsv
+[4.200s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/packages/abb_irb140_support
+[4.201s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig.cmake
+[4.203s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig-version.cmake
+[4.204s] -- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.xml
+[4.216s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb140_support' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_irb140_support

@@ -1,0 +1,22 @@
+[0.025s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_hardware_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_ros2/abb_hardware_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_hardware_interface
+[0.053s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.624s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.647s] -- Configuring incomplete, errors occurred!
+[0.648s] [31mCMake Error at CMakeLists.txt:33 (find_package):
+[0.649s]   By not providing "Findabb_egm_rws_managers.cmake" in CMAKE_MODULE_PATH this
+[0.649s]   project has asked CMake to find a package configuration file provided by
+[0.650s]   "abb_egm_rws_managers", but CMake did not find one.
+[0.650s] 
+[0.650s]   Could not find a package configuration file provided by
+[0.650s]   "abb_egm_rws_managers" with any of the following names:
+[0.650s] 
+[0.650s]     abb_egm_rws_managersConfig.cmake
+[0.650s]     abb_egm_rws_managers-config.cmake
+[0.650s] 
+[0.650s]   Add the installation prefix of "abb_egm_rws_managers" to CMAKE_PREFIX_PATH
+[0.650s]   or set "abb_egm_rws_managers_DIR" to a directory containing one of the
+[0.650s]   above files.  If "abb_egm_rws_managers" provides a separate development
+[0.651s]   package or SDK, be sure it has been installed.
+[0.651s] 
+[0.651s] [0m
+[0.657s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_hardware_interface' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_ros2/abb_hardware_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_hardware_interface

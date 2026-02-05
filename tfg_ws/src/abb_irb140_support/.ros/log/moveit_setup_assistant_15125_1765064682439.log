@@ -1,0 +1,32 @@
+[INFO] [1765064697.555131789] [moveit_setup_assistant.urdf]: Loaded abb_irb140 robot model.
+[INFO] [1765064697.566052899] [moveit_4237281921.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765064697.566115084] [moveit_4237281921.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765064697.566626398] [moveit_4237281921.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064697.566899750] [moveit_4237281921.moveit.core.robot_model]: Link link_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064697.567088064] [moveit_4237281921.moveit.core.robot_model]: Link link_2 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064697.567286971] [moveit_4237281921.moveit.core.robot_model]: Link link_3 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064697.567506841] [moveit_4237281921.moveit.core.robot_model]: Link link_4 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064697.567715378] [moveit_4237281921.moveit.core.robot_model]: Link link_5 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064697.567897378] [moveit_4237281921.moveit.core.robot_model]: Link link_6 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064697.567984248] [moveit_4237281921.moveit.core.robot_model]: No geometry is associated to any robot links
+[INFO] [1765064708.276653555] [moveit_setup_assistant.urdf]: Loaded abb_irb140 robot model.
+[INFO] [1765064708.276766480] [moveit_4237281921.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765064708.276809536] [moveit_4237281921.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765064708.277282942] [moveit_4237281921.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.277593497] [moveit_4237281921.moveit.core.robot_model]: Link link_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.277872386] [moveit_4237281921.moveit.core.robot_model]: Link link_2 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.278131478] [moveit_4237281921.moveit.core.robot_model]: Link link_3 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.278408348] [moveit_4237281921.moveit.core.robot_model]: Link link_4 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.278637421] [moveit_4237281921.moveit.core.robot_model]: Link link_5 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.278866699] [moveit_4237281921.moveit.core.robot_model]: Link link_6 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.278954625] [moveit_4237281921.moveit.core.robot_model]: No geometry is associated to any robot links
+[INFO] [1765064708.655866640] [moveit_4237281921.moveit.ros.rdf_loader]: Loaded robot model in 0.00124568 seconds
+[INFO] [1765064708.655930436] [moveit_4237281921.moveit.core.robot_model]: Loading robot model 'abb_irb140'...
+[INFO] [1765064708.655952214] [moveit_4237281921.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[WARN] [1765064708.656190139] [moveit_4237281921.moveit.core.robot_model]: Link base_link has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.656382324] [moveit_4237281921.moveit.core.robot_model]: Link link_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.656555101] [moveit_4237281921.moveit.core.robot_model]: Link link_2 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.656743786] [moveit_4237281921.moveit.core.robot_model]: Link link_3 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.656917916] [moveit_4237281921.moveit.core.robot_model]: Link link_4 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.657081434] [moveit_4237281921.moveit.core.robot_model]: Link link_5 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765064708.657230748] [moveit_4237281921.moveit.core.robot_model]: Link link_6 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF 

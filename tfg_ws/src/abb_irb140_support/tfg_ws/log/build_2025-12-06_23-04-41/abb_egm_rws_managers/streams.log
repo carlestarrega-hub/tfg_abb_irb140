@@ -1,0 +1,30 @@
+[0.016s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers': CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/tfg_ws/install/abb_libegm/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_egm_rws_managers -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_egm_rws_managers
+[0.171s] -- The CXX compiler identification is GNU 13.3.0
+[0.207s] -- Detecting CXX compiler ABI info
+[0.421s] -- Detecting CXX compiler ABI info - done
+[0.437s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.437s] -- Detecting CXX compile features
+[0.438s] -- Detecting CXX compile features - done
+[0.441s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.629s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.630s] -- Found Threads: TRUE  
+[0.664s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: regex system thread 
+[0.674s] [31mCMake Error at CMakeLists.txt:36 (find_package):
+[0.674s]   By not providing "Findabb_librws.cmake" in CMAKE_MODULE_PATH this project
+[0.674s]   has asked CMake to find a package configuration file provided by
+[0.675s]   "abb_librws", but CMake did not find one.
+[0.675s] 
+[0.675s]   Could not find a package configuration file provided by "abb_librws" with
+[0.675s]   any of the following names:
+[0.675s] 
+[0.675s]     abb_librwsConfig.cmake
+[0.675s]     abb_librws-config.cmake
+[0.675s] 
+[0.675s]   Add the installation prefix of "abb_librws" to CMAKE_PREFIX_PATH or set
+[0.675s]   "abb_librws_DIR" to a directory containing one of the above files.  If
+[0.676s]   "abb_librws" provides a separate development package or SDK, be sure it has
+[0.676s]   been installed.
+[0.676s] 
+[0.676s] [0m
+[0.676s] -- Configuring incomplete, errors occurred!
+[0.681s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers' returned '1': CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/tfg_ws/install/abb_libegm/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_egm_rws_managers -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_egm_rws_managers

@@ -1,0 +1,934 @@
+[0.000000] (-) TimerEvent: {}
+[0.000823] (abb_libegm) JobQueued: {'identifier': 'abb_libegm', 'dependencies': OrderedDict()}
+[0.000978] (abb_librws) JobQueued: {'identifier': 'abb_librws', 'dependencies': OrderedDict()}
+[0.001003] (abb_resources) JobQueued: {'identifier': 'abb_resources', 'dependencies': OrderedDict()}
+[0.001022] (abb_ros2) JobQueued: {'identifier': 'abb_ros2', 'dependencies': OrderedDict()}
+[0.001040] (abb_bringup) JobQueued: {'identifier': 'abb_bringup', 'dependencies': OrderedDict({'abb_resources': '/home/ubuntu/tfg_ws/install/abb_resources'})}
+[0.001064] (abb_egm_rws_managers) JobQueued: {'identifier': 'abb_egm_rws_managers', 'dependencies': OrderedDict({'abb_libegm': '/home/ubuntu/tfg_ws/install/abb_libegm', 'abb_librws': '/home/ubuntu/tfg_ws/install/abb_librws'})}
+[0.001085] (abb_irb140_support) JobQueued: {'identifier': 'abb_irb140_support', 'dependencies': OrderedDict({'abb_resources': '/home/ubuntu/tfg_ws/install/abb_resources'})}
+[0.001104] (abb_hardware_interface) JobQueued: {'identifier': 'abb_hardware_interface', 'dependencies': OrderedDict({'abb_libegm': '/home/ubuntu/tfg_ws/install/abb_libegm', 'abb_librws': '/home/ubuntu/tfg_ws/install/abb_librws', 'abb_egm_rws_managers': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers'})}
+[0.001127] (abb_rws_client) JobQueued: {'identifier': 'abb_rws_client', 'dependencies': OrderedDict({'abb_libegm': '/home/ubuntu/tfg_ws/install/abb_libegm', 'abb_librws': '/home/ubuntu/tfg_ws/install/abb_librws', 'abb_egm_rws_managers': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers', 'abb_hardware_interface': '/home/ubuntu/tfg_ws/install/abb_hardware_interface'})}
+[0.001150] (abb_libegm) JobStarted: {'identifier': 'abb_libegm'}
+[0.008595] (abb_librws) JobStarted: {'identifier': 'abb_librws'}
+[0.014390] (abb_resources) JobStarted: {'identifier': 'abb_resources'}
+[0.020410] (abb_ros2) JobStarted: {'identifier': 'abb_ros2'}
+[0.027746] (abb_libegm) JobProgress: {'identifier': 'abb_libegm', 'progress': 'cmake'}
+[0.028584] (abb_libegm) JobProgress: {'identifier': 'abb_libegm', 'progress': 'build'}
+[0.029363] (abb_libegm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/tfg_ws/build/abb_libegm', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_libegm', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_libegm', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.032709] (abb_librws) JobProgress: {'identifier': 'abb_librws', 'progress': 'cmake'}
+[0.034384] (abb_librws) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/tfg_ws/src/abb_librws', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_librws'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_librws', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_librws', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.035870] (abb_resources) JobProgress: {'identifier': 'abb_resources', 'progress': 'cmake'}
+[0.036772] (abb_resources) JobProgress: {'identifier': 'abb_resources', 'progress': 'build'}
+[0.037107] (abb_resources) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/tfg_ws/build/abb_resources', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_resources', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_resources', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.050854] (abb_ros2) JobProgress: {'identifier': 'abb_ros2', 'progress': 'cmake'}
+[0.050953] (abb_ros2) JobProgress: {'identifier': 'abb_ros2', 'progress': 'build'}
+[0.050984] (abb_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/tfg_ws/build/abb_ros2', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_ros2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_ros2', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.062219] (abb_librws) StdoutLine: {'line': b'-- Searching for Poco library...\n'}
+[0.078555] (abb_librws) StdoutLine: {'line': b'--   Found Poco!\n'}
+[0.079028] (abb_librws) StdoutLine: {'line': b'-- components found: Foundation, Net, Util, XML.\n'}
+[0.083985] (abb_librws) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY\n'}
+[0.101932] (-) TimerEvent: {}
+[0.131586] (abb_resources) CommandEnded: {'returncode': 0}
+[0.132954] (abb_resources) JobProgress: {'identifier': 'abb_resources', 'progress': 'install'}
+[0.154173] (abb_resources) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/tfg_ws/build/abb_resources'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_resources', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_resources', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.162463] (abb_ros2) CommandEnded: {'returncode': 0}
+[0.163086] (abb_ros2) JobProgress: {'identifier': 'abb_ros2', 'progress': 'install'}
+[0.163126] (abb_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/tfg_ws/build/abb_ros2'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_ros2', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_ros2', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.175422] (abb_resources) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.176958] (abb_resources) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.178098] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/ament_index/resource_index/package_run_dependencies/abb_resources\n'}
+[0.179413] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/ament_index/resource_index/parent_prefix_path/abb_resources\n'}
+[0.180229] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/environment/ament_prefix_path.sh\n'}
+[0.180560] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/environment/ament_prefix_path.dsv\n'}
+[0.181383] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/environment/path.sh\n'}
+[0.182352] (abb_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.183540] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/environment/path.dsv\n'}
+[0.184239] (abb_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.185315] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/local_setup.bash\n'}
+[0.185882] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/ament_index/resource_index/package_run_dependencies/abb_ros2\n'}
+[0.186029] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/ament_index/resource_index/parent_prefix_path/abb_ros2\n'}
+[0.186133] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/environment/ament_prefix_path.sh\n'}
+[0.186250] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/environment/ament_prefix_path.dsv\n'}
+[0.186346] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/local_setup.sh\n'}
+[0.186520] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/environment/path.sh\n'}
+[0.186623] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/environment/path.dsv\n'}
+[0.186751] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/local_setup.bash\n'}
+[0.189098] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/local_setup.sh\n'}
+[0.189308] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/local_setup.zsh\n'}
+[0.189496] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/local_setup.zsh\n'}
+[0.189614] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/local_setup.dsv\n'}
+[0.189709] (abb_ros2) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.dsv\n'}
+[0.189835] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/local_setup.dsv\n'}
+[0.190179] (abb_resources) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.dsv\n'}
+[0.191959] (abb_libegm) StdoutLine: {'line': b'[100%] Built target abb_libegm\n'}
+[0.202889] (-) TimerEvent: {}
+[0.207843] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/ament_index/resource_index/packages/abb_ros2\n'}
+[0.211910] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/cmake/abb_ros2Config.cmake\n'}
+[0.212836] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/cmake/abb_ros2Config-version.cmake\n'}
+[0.213445] (abb_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_ros2/share/abb_ros2/package.xml\n'}
+[0.213602] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/ament_index/resource_index/packages/abb_resources\n'}
+[0.213937] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/cmake/abb_resourcesConfig.cmake\n'}
+[0.214282] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/cmake/abb_resourcesConfig-version.cmake\n'}
+[0.214447] (abb_ros2) CommandEnded: {'returncode': 0}
+[0.214987] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/package.xml\n'}
+[0.216096] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/urdf/common_colours.xacro\n'}
+[0.218911] (abb_resources) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_resources/share/abb_resources/urdf/common_materials.xacro\n'}
+[0.242361] (abb_ros2) JobEnded: {'identifier': 'abb_ros2', 'rc': 0}
+[0.243935] (abb_libegm) CommandEnded: {'returncode': 0}
+[0.244674] (abb_libegm) JobProgress: {'identifier': 'abb_libegm', 'progress': 'install'}
+[0.244989] (abb_libegm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/tfg_ws/build/abb_libegm'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_libegm', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_libegm', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.247049] (abb_resources) CommandEnded: {'returncode': 0}
+[0.274720] (abb_resources) JobEnded: {'identifier': 'abb_resources', 'rc': 0}
+[0.276390] (abb_bringup) JobStarted: {'identifier': 'abb_bringup'}
+[0.277055] (abb_libegm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.277513] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include\n'}
+[0.277618] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm\n'}
+[0.277714] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_base_interface.h\n'}
+[0.277828] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_logger.h\n'}
+[0.277945] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_udp_server.h\n'}
+[0.278032] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_common_auxiliary.h\n'}
+[0.278115] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_controller_interface.h\n'}
+[0.278199] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_interpolator.h\n'}
+[0.278282] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_trajectory_interface.h\n'}
+[0.278365] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_common.h\n'}
+[0.278478] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm.proto\n'}
+[0.278560] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_wrapper.proto\n'}
+[0.278641] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_wrapper_trajectory.proto\n'}
+[0.278721] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm.pb.h\n'}
+[0.278819] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_wrapper.pb.h\n'}
+[0.278953] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_wrapper_trajectory.pb.h\n'}
+[0.279039] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/abb_libegm_export.h\n'}
+[0.279121] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/lib/libabb_libegm.so\n'}
+[0.279201] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/abb_libegmConfig.cmake\n'}
+[0.279281] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/abb_libegmConfigVersion.cmake\n'}
+[0.279364] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/package.xml\n'}
+[0.279448] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/abb_libegmTargets.cmake\n'}
+[0.279537] (abb_libegm) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/abb_libegmTargets-noconfig.cmake\n'}
+[0.280104] (abb_librws) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success\n'}
+[0.281349] (abb_librws) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY\n'}
+[0.285596] (abb_irb140_support) JobStarted: {'identifier': 'abb_irb140_support'}
+[0.293403] (abb_libegm) CommandEnded: {'returncode': 0}
+[0.303010] (-) TimerEvent: {}
+[0.310823] (abb_libegm) JobEnded: {'identifier': 'abb_libegm', 'rc': 0}
+[0.312530] (abb_bringup) JobProgress: {'identifier': 'abb_bringup', 'progress': 'cmake'}
+[0.313450] (abb_bringup) JobProgress: {'identifier': 'abb_bringup', 'progress': 'build'}
+[0.314768] (abb_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/tfg_ws/build/abb_bringup', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_bringup', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_bringup', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.316557] (abb_irb140_support) JobProgress: {'identifier': 'abb_irb140_support', 'progress': 'cmake'}
+[0.318145] (abb_irb140_support) JobProgress: {'identifier': 'abb_irb140_support', 'progress': 'build'}
+[0.318512] (abb_irb140_support) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/tfg_ws/build/abb_irb140_support', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_irb140_support', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_irb140_support', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.401228] (abb_irb140_support) CommandEnded: {'returncode': 0}
+[0.404803] (abb_irb140_support) JobProgress: {'identifier': 'abb_irb140_support', 'progress': 'install'}
+[0.404890] (-) TimerEvent: {}
+[0.405051] (abb_irb140_support) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/tfg_ws/build/abb_irb140_support'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_irb140_support', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_irb140_support', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.423228] (abb_bringup) StdoutLine: {'line': b'[ 66%] Built target gtest\n'}
+[0.424149] (abb_bringup) StdoutLine: {'line': b'[ 66%] Built target gtest_main\n'}
+[0.424495] (abb_irb140_support) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.424689] (abb_irb140_support) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.425810] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140.urdf\n'}
+[0.426409] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/package_run_dependencies/abb_irb140_support\n'}
+[0.426862] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/parent_prefix_path/abb_irb140_support\n'}
+[0.427211] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.sh\n'}
+[0.427323] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.dsv\n'}
+[0.427473] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.sh\n'}
+[0.428333] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.dsv\n'}
+[0.428503] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.bash\n'}
+[0.428628] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.sh\n'}
+[0.428733] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.zsh\n'}
+[0.428928] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.dsv\n'}
+[0.429054] (abb_irb140_support) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.dsv\n'}
+[0.452803] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/packages/abb_irb140_support\n'}
+[0.453252] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig.cmake\n'}
+[0.453507] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig-version.cmake\n'}
+[0.453776] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.xml\n'}
+[0.457423] (abb_irb140_support) CommandEnded: {'returncode': 0}
+[0.471125] (abb_librws) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success\n'}
+[0.471473] (abb_librws) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR\n'}
+[0.481119] (abb_irb140_support) JobEnded: {'identifier': 'abb_irb140_support', 'rc': 0}
+[0.483382] (abb_bringup) StdoutLine: {'line': b'[100%] Built target test_command_topics\n'}
+[0.504418] (abb_bringup) CommandEnded: {'returncode': 0}
+[0.504893] (-) TimerEvent: {}
+[0.505488] (abb_bringup) JobProgress: {'identifier': 'abb_bringup', 'progress': 'install'}
+[0.506755] (abb_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/tfg_ws/build/abb_bringup'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_bringup', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_bringup', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_resources:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.521214] (abb_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.521830] (abb_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.522845] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/config/abb_controllers.yaml\n'}
+[0.523213] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/launch/abb_control.launch.py\n'}
+[0.523391] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/launch/abb_moveit.launch.py\n'}
+[0.523511] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/launch/abb_rws_client.launch.py\n'}
+[0.523804] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/ament_index/resource_index/package_run_dependencies/abb_bringup\n'}
+[0.524029] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/ament_index/resource_index/parent_prefix_path/abb_bringup\n'}
+[0.524238] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/environment/ament_prefix_path.sh\n'}
+[0.524430] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/environment/ament_prefix_path.dsv\n'}
+[0.524659] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/environment/path.sh\n'}
+[0.524893] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/environment/path.dsv\n'}
+[0.525091] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/local_setup.bash\n'}
+[0.525279] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/local_setup.sh\n'}
+[0.525465] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/local_setup.zsh\n'}
+[0.525653] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/local_setup.dsv\n'}
+[0.525856] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/package.dsv\n'}
+[0.526079] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/ament_index/resource_index/packages/abb_bringup\n'}
+[0.526275] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.526474] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/cmake/abb_bringupConfig.cmake\n'}
+[0.526618] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/cmake/abb_bringupConfig-version.cmake\n'}
+[0.526844] (abb_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_bringup/share/abb_bringup/package.xml\n'}
+[0.530098] (abb_bringup) CommandEnded: {'returncode': 0}
+[0.550490] (abb_bringup) JobEnded: {'identifier': 'abb_bringup', 'rc': 0}
+[0.605047] (-) TimerEvent: {}
+[0.635921] (abb_librws) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success\n'}
+[0.638197] (abb_librws) StdoutLine: {'line': b'-- Configuring done (0.6s)\n'}
+[0.646029] (abb_librws) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.648189] (abb_librws) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_librws\n'}
+[0.653649] (abb_librws) CommandEnded: {'returncode': 0}
+[0.654227] (abb_librws) JobProgress: {'identifier': 'abb_librws', 'progress': 'build'}
+[0.654518] (abb_librws) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/tfg_ws/build/abb_librws', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_librws', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_librws', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.705173] (-) TimerEvent: {}
+[0.745165] (abb_librws) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_interface.cpp.o\x1b[0m\n'}
+[0.745697] (abb_librws) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_client.cpp.o\x1b[0m\n'}
+[0.745914] (abb_librws) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_common.cpp.o\x1b[0m\n'}
+[0.746069] (abb_librws) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_poco_client.cpp.o\x1b[0m\n'}
+[0.805325] (-) TimerEvent: {}
+[0.909126] (-) TimerEvent: {}
+[1.009714] (-) TimerEvent: {}
+[1.110292] (-) TimerEvent: {}
+[1.210831] (-) TimerEvent: {}
+[1.311332] (-) TimerEvent: {}
+[1.411848] (-) TimerEvent: {}
+[1.513914] (-) TimerEvent: {}
+[1.614447] (-) TimerEvent: {}
+[1.714979] (-) TimerEvent: {}
+[1.791187] (abb_librws) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_rapid.cpp.o\x1b[0m\n'}
+[1.815133] (-) TimerEvent: {}
+[1.915612] (-) TimerEvent: {}
+[2.019277] (-) TimerEvent: {}
+[2.059408] (abb_librws) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/abb_librws.dir/src/rws_state_machine_interface.cpp.o\x1b[0m\n'}
+[2.119428] (-) TimerEvent: {}
+[2.220182] (-) TimerEvent: {}
+[2.320911] (-) TimerEvent: {}
+[2.421649] (-) TimerEvent: {}
+[2.525446] (-) TimerEvent: {}
+[2.626401] (-) TimerEvent: {}
+[2.730147] (-) TimerEvent: {}
+[2.830769] (-) TimerEvent: {}
+[2.931343] (-) TimerEvent: {}
+[3.031765] (-) TimerEvent: {}
+[3.132141] (-) TimerEvent: {}
+[3.232501] (-) TimerEvent: {}
+[3.332892] (-) TimerEvent: {}
+[3.403474] (abb_librws) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libabb_librws.so\x1b[0m\n'}
+[3.433075] (-) TimerEvent: {}
+[3.533494] (-) TimerEvent: {}
+[3.633875] (-) TimerEvent: {}
+[3.637663] (abb_librws) StdoutLine: {'line': b'[100%] Built target abb_librws\n'}
+[3.657855] (abb_librws) CommandEnded: {'returncode': 0}
+[3.658569] (abb_librws) JobProgress: {'identifier': 'abb_librws', 'progress': 'install'}
+[3.659697] (abb_librws) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/tfg_ws/build/abb_librws'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_librws', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_librws', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.674283] (abb_librws) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.674559] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include\n'}
+[3.674663] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws\n'}
+[3.674796] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_rapid.h\n'}
+[3.674929] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_poco_client.h\n'}
+[3.675032] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_common.h\n'}
+[3.675164] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_state_machine_interface.h\n'}
+[3.675392] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_cfg.h\n'}
+[3.675526] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_interface.h\n'}
+[3.675698] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/rws_client.h\n'}
+[3.675945] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/include/abb_librws/abb_librws_export.h\n'}
+[3.676115] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake\n'}
+[3.676217] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake/FindPoco.cmake\n'}
+[3.676359] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake/README.md\n'}
+[3.676595] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/lib/libabb_librws.so\n'}
+[3.678151] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/abb_librwsConfig.cmake\n'}
+[3.678294] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/abb_librwsConfigVersion.cmake\n'}
+[3.678423] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/package.xml\n'}
+[3.678597] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/abb_librwsTargets.cmake\n'}
+[3.678828] (abb_librws) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/abb_librwsTargets-noconfig.cmake\n'}
+[3.681719] (abb_librws) CommandEnded: {'returncode': 0}
+[3.698590] (abb_librws) JobEnded: {'identifier': 'abb_librws', 'rc': 0}
+[3.700067] (abb_egm_rws_managers) JobStarted: {'identifier': 'abb_egm_rws_managers'}
+[3.713289] (abb_egm_rws_managers) JobProgress: {'identifier': 'abb_egm_rws_managers', 'progress': 'cmake'}
+[3.714494] (abb_egm_rws_managers) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/tfg_ws/src/abb_egm_rws_managers', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_egm_rws_managers'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_MODULE_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.733958] (-) TimerEvent: {}
+[3.754492] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Searching for Poco library...\n'}
+[3.768344] (abb_egm_rws_managers) StdoutLine: {'line': b'--   Found Poco!\n'}
+[3.768534] (abb_egm_rws_managers) StdoutLine: {'line': b'-- components found: Foundation, Net, Util, XML.\n'}
+[3.789460] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/aarch64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[3.789655] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Generating protobuf C++ for: proto/robot_controller_description.proto\n'}
+[3.790122] (abb_egm_rws_managers) StdoutLine: {'line': b'-- abb_egm_rws_managers: Defaulting build type to RelWithDebInfo\n'}
+[3.793530] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY\n'}
+[3.834106] (-) TimerEvent: {}
+[3.934492] (-) TimerEvent: {}
+[3.958308] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success\n'}
+[3.959287] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY\n'}
+[4.034610] (-) TimerEvent: {}
+[4.122119] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success\n'}
+[4.122434] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR\n'}
+[4.134695] (-) TimerEvent: {}
+[4.235028] (-) TimerEvent: {}
+[4.286826] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success\n'}
+[4.292409] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Configuring done (0.6s)\n'}
+[4.302138] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.304350] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_egm_rws_managers\n'}
+[4.310110] (abb_egm_rws_managers) CommandEnded: {'returncode': 0}
+[4.310728] (abb_egm_rws_managers) JobProgress: {'identifier': 'abb_egm_rws_managers', 'progress': 'build'}
+[4.311812] (abb_egm_rws_managers) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_MODULE_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[4.335132] (-) TimerEvent: {}
+[4.381381] (abb_egm_rws_managers) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mRunning cpp protocol buffer compiler on proto/robot_controller_description.proto\x1b[0m\n'}
+[4.435266] (-) TimerEvent: {}
+[4.470879] (abb_egm_rws_managers) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/rws_manager.cpp.o\x1b[0m\n'}
+[4.471211] (abb_egm_rws_managers) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/utilities.cpp.o\x1b[0m\n'}
+[4.471328] (abb_egm_rws_managers) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/egm_manager.cpp.o\x1b[0m\n'}
+[4.471477] (abb_egm_rws_managers) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/system_data_parser.cpp.o\x1b[0m\n'}
+[4.536882] (-) TimerEvent: {}
+[4.637330] (-) TimerEvent: {}
+[4.737807] (-) TimerEvent: {}
+[4.838292] (-) TimerEvent: {}
+[4.941213] (-) TimerEvent: {}
+[5.042528] (-) TimerEvent: {}
+[5.146242] (-) TimerEvent: {}
+[5.247086] (-) TimerEvent: {}
+[5.347914] (-) TimerEvent: {}
+[5.448642] (-) TimerEvent: {}
+[5.550208] (-) TimerEvent: {}
+[5.652151] (-) TimerEvent: {}
+[5.752911] (-) TimerEvent: {}
+[5.856292] (-) TimerEvent: {}
+[5.957190] (-) TimerEvent: {}
+[6.061130] (-) TimerEvent: {}
+[6.161799] (-) TimerEvent: {}
+[6.262603] (-) TimerEvent: {}
+[6.366161] (-) TimerEvent: {}
+[6.466673] (-) TimerEvent: {}
+[6.567480] (-) TimerEvent: {}
+[6.668305] (-) TimerEvent: {}
+[6.770914] (-) TimerEvent: {}
+[6.871442] (-) TimerEvent: {}
+[6.971918] (-) TimerEvent: {}
+[7.075140] (-) TimerEvent: {}
+[7.175676] (-) TimerEvent: {}
+[7.276224] (-) TimerEvent: {}
+[7.376734] (-) TimerEvent: {}
+[7.477254] (-) TimerEvent: {}
+[7.577774] (-) TimerEvent: {}
+[7.679894] (-) TimerEvent: {}
+[7.780389] (-) TimerEvent: {}
+[7.880880] (-) TimerEvent: {}
+[7.982890] (-) TimerEvent: {}
+[8.083425] (-) TimerEvent: {}
+[8.184165] (-) TimerEvent: {}
+[8.285905] (-) TimerEvent: {}
+[8.386380] (-) TimerEvent: {}
+[8.486879] (-) TimerEvent: {}
+[8.588898] (-) TimerEvent: {}
+[8.689393] (-) TimerEvent: {}
+[8.789993] (-) TimerEvent: {}
+[8.890464] (-) TimerEvent: {}
+[8.992912] (-) TimerEvent: {}
+[9.093379] (-) TimerEvent: {}
+[9.193902] (-) TimerEvent: {}
+[9.294389] (-) TimerEvent: {}
+[9.395919] (-) TimerEvent: {}
+[9.496379] (-) TimerEvent: {}
+[9.596879] (-) TimerEvent: {}
+[9.699894] (-) TimerEvent: {}
+[9.800363] (-) TimerEvent: {}
+[9.900863] (-) TimerEvent: {}
+[10.001336] (-) TimerEvent: {}
+[10.101850] (-) TimerEvent: {}
+[10.202326] (-) TimerEvent: {}
+[10.305899] (-) TimerEvent: {}
+[10.406435] (-) TimerEvent: {}
+[10.506970] (-) TimerEvent: {}
+[10.607404] (-) TimerEvent: {}
+[10.707934] (-) TimerEvent: {}
+[10.808445] (-) TimerEvent: {}
+[10.908900] (-) TimerEvent: {}
+[11.010899] (-) TimerEvent: {}
+[11.111376] (-) TimerEvent: {}
+[11.211884] (-) TimerEvent: {}
+[11.313893] (-) TimerEvent: {}
+[11.414345] (-) TimerEvent: {}
+[11.514844] (-) TimerEvent: {}
+[11.615322] (-) TimerEvent: {}
+[11.718906] (-) TimerEvent: {}
+[11.819376] (-) TimerEvent: {}
+[11.919902] (-) TimerEvent: {}
+[12.020363] (-) TimerEvent: {}
+[12.120844] (-) TimerEvent: {}
+[12.221394] (-) TimerEvent: {}
+[12.321886] (-) TimerEvent: {}
+[12.424892] (-) TimerEvent: {}
+[12.525397] (-) TimerEvent: {}
+[12.625887] (-) TimerEvent: {}
+[12.726606] (-) TimerEvent: {}
+[12.828038] (-) TimerEvent: {}
+[12.928518] (-) TimerEvent: {}
+[13.032126] (-) TimerEvent: {}
+[13.132678] (-) TimerEvent: {}
+[13.233192] (-) TimerEvent: {}
+[13.333694] (-) TimerEvent: {}
+[13.434228] (-) TimerEvent: {}
+[13.534774] (-) TimerEvent: {}
+[13.635491] (-) TimerEvent: {}
+[13.737101] (-) TimerEvent: {}
+[13.839125] (-) TimerEvent: {}
+[13.939633] (-) TimerEvent: {}
+[14.041900] (-) TimerEvent: {}
+[14.142390] (-) TimerEvent: {}
+[14.242876] (-) TimerEvent: {}
+[14.343345] (-) TimerEvent: {}
+[14.443867] (-) TimerEvent: {}
+[14.547134] (-) TimerEvent: {}
+[14.647897] (-) TimerEvent: {}
+[14.748598] (-) TimerEvent: {}
+[14.851215] (-) TimerEvent: {}
+[14.951801] (-) TimerEvent: {}
+[15.053941] (-) TimerEvent: {}
+[15.154517] (-) TimerEvent: {}
+[15.257892] (-) TimerEvent: {}
+[15.358470] (-) TimerEvent: {}
+[15.459544] (-) TimerEvent: {}
+[15.560251] (-) TimerEvent: {}
+[15.663886] (-) TimerEvent: {}
+[15.764372] (-) TimerEvent: {}
+[15.864881] (-) TimerEvent: {}
+[15.965387] (-) TimerEvent: {}
+[16.065883] (-) TimerEvent: {}
+[16.166373] (-) TimerEvent: {}
+[16.268138] (-) TimerEvent: {}
+[16.370128] (-) TimerEvent: {}
+[16.472076] (-) TimerEvent: {}
+[16.572616] (-) TimerEvent: {}
+[16.676128] (-) TimerEvent: {}
+[16.776665] (-) TimerEvent: {}
+[16.877478] (-) TimerEvent: {}
+[16.977906] (-) TimerEvent: {}
+[17.079905] (-) TimerEvent: {}
+[17.180392] (-) TimerEvent: {}
+[17.280868] (-) TimerEvent: {}
+[17.382908] (-) TimerEvent: {}
+[17.483424] (-) TimerEvent: {}
+[17.583971] (-) TimerEvent: {}
+[17.684441] (-) TimerEvent: {}
+[17.787938] (-) TimerEvent: {}
+[17.888451] (-) TimerEvent: {}
+[17.988955] (-) TimerEvent: {}
+[18.089439] (-) TimerEvent: {}
+[18.189908] (-) TimerEvent: {}
+[18.290359] (-) TimerEvent: {}
+[18.390857] (-) TimerEvent: {}
+[18.492892] (-) TimerEvent: {}
+[18.593362] (-) TimerEvent: {}
+[18.693860] (-) TimerEvent: {}
+[18.795897] (-) TimerEvent: {}
+[18.896403] (-) TimerEvent: {}
+[18.996935] (-) TimerEvent: {}
+[19.097468] (-) TimerEvent: {}
+[19.200893] (-) TimerEvent: {}
+[19.301354] (-) TimerEvent: {}
+[19.401839] (-) TimerEvent: {}
+[19.502326] (-) TimerEvent: {}
+[19.602770] (-) TimerEvent: {}
+[19.703278] (-) TimerEvent: {}
+[19.803821] (-) TimerEvent: {}
+[19.907130] (-) TimerEvent: {}
+[20.007595] (-) TimerEvent: {}
+[20.108115] (-) TimerEvent: {}
+[20.211928] (-) TimerEvent: {}
+[20.244010] (abb_egm_rws_managers) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/robot_controller_description.pb.cc.o\x1b[0m\n'}
+[20.312078] (-) TimerEvent: {}
+[20.412611] (-) TimerEvent: {}
+[20.513379] (-) TimerEvent: {}
+[20.614463] (-) TimerEvent: {}
+[20.717160] (-) TimerEvent: {}
+[20.817911] (-) TimerEvent: {}
+[20.920164] (-) TimerEvent: {}
+[21.020751] (-) TimerEvent: {}
+[21.122935] (-) TimerEvent: {}
+[21.223498] (-) TimerEvent: {}
+[21.324080] (-) TimerEvent: {}
+[21.427186] (-) TimerEvent: {}
+[21.527714] (-) TimerEvent: {}
+[21.628335] (-) TimerEvent: {}
+[21.728936] (-) TimerEvent: {}
+[21.829549] (-) TimerEvent: {}
+[21.931115] (-) TimerEvent: {}
+[22.031664] (-) TimerEvent: {}
+[22.133913] (-) TimerEvent: {}
+[22.234443] (-) TimerEvent: {}
+[22.334950] (-) TimerEvent: {}
+[22.436918] (-) TimerEvent: {}
+[22.537501] (-) TimerEvent: {}
+[22.638132] (-) TimerEvent: {}
+[22.739926] (-) TimerEvent: {}
+[22.840548] (-) TimerEvent: {}
+[22.943095] (-) TimerEvent: {}
+[23.044349] (-) TimerEvent: {}
+[23.144998] (-) TimerEvent: {}
+[23.246422] (-) TimerEvent: {}
+[23.347278] (-) TimerEvent: {}
+[23.448249] (-) TimerEvent: {}
+[23.548840] (-) TimerEvent: {}
+[23.649751] (-) TimerEvent: {}
+[23.750304] (-) TimerEvent: {}
+[23.850833] (-) TimerEvent: {}
+[23.951319] (-) TimerEvent: {}
+[24.052044] (-) TimerEvent: {}
+[24.152609] (-) TimerEvent: {}
+[24.253303] (-) TimerEvent: {}
+[24.353813] (-) TimerEvent: {}
+[24.454205] (-) TimerEvent: {}
+[24.554618] (-) TimerEvent: {}
+[24.655055] (-) TimerEvent: {}
+[24.755612] (-) TimerEvent: {}
+[24.856068] (-) TimerEvent: {}
+[24.956619] (-) TimerEvent: {}
+[25.057039] (-) TimerEvent: {}
+[25.157422] (-) TimerEvent: {}
+[25.257822] (-) TimerEvent: {}
+[25.358206] (-) TimerEvent: {}
+[25.458568] (-) TimerEvent: {}
+[25.558989] (-) TimerEvent: {}
+[25.659325] (-) TimerEvent: {}
+[25.759676] (-) TimerEvent: {}
+[25.860114] (-) TimerEvent: {}
+[25.960460] (-) TimerEvent: {}
+[26.060850] (-) TimerEvent: {}
+[26.161198] (-) TimerEvent: {}
+[26.261543] (-) TimerEvent: {}
+[26.361870] (-) TimerEvent: {}
+[26.462258] (-) TimerEvent: {}
+[26.562615] (-) TimerEvent: {}
+[26.663007] (-) TimerEvent: {}
+[26.763336] (-) TimerEvent: {}
+[26.863686] (-) TimerEvent: {}
+[26.964095] (-) TimerEvent: {}
+[27.064446] (-) TimerEvent: {}
+[27.164790] (-) TimerEvent: {}
+[27.265138] (-) TimerEvent: {}
+[27.365532] (-) TimerEvent: {}
+[27.465840] (-) TimerEvent: {}
+[27.566193] (-) TimerEvent: {}
+[27.666552] (-) TimerEvent: {}
+[27.766937] (-) TimerEvent: {}
+[27.867277] (-) TimerEvent: {}
+[27.967624] (-) TimerEvent: {}
+[28.068019] (-) TimerEvent: {}
+[28.168408] (-) TimerEvent: {}
+[28.268734] (-) TimerEvent: {}
+[28.369085] (-) TimerEvent: {}
+[28.469443] (-) TimerEvent: {}
+[28.569839] (-) TimerEvent: {}
+[28.670151] (-) TimerEvent: {}
+[28.770455] (-) TimerEvent: {}
+[28.870795] (-) TimerEvent: {}
+[28.971308] (-) TimerEvent: {}
+[29.071804] (-) TimerEvent: {}
+[29.172217] (-) TimerEvent: {}
+[29.272659] (-) TimerEvent: {}
+[29.373312] (-) TimerEvent: {}
+[29.473732] (-) TimerEvent: {}
+[29.574094] (-) TimerEvent: {}
+[29.674351] (-) TimerEvent: {}
+[29.774600] (-) TimerEvent: {}
+[29.874844] (-) TimerEvent: {}
+[29.975073] (-) TimerEvent: {}
+[30.075307] (-) TimerEvent: {}
+[30.175534] (-) TimerEvent: {}
+[30.275725] (-) TimerEvent: {}
+[30.375932] (-) TimerEvent: {}
+[30.476186] (-) TimerEvent: {}
+[30.576574] (-) TimerEvent: {}
+[30.676945] (-) TimerEvent: {}
+[30.777246] (-) TimerEvent: {}
+[30.877526] (-) TimerEvent: {}
+[30.977805] (-) TimerEvent: {}
+[31.078079] (-) TimerEvent: {}
+[31.178335] (-) TimerEvent: {}
+[31.278647] (-) TimerEvent: {}
+[31.379252] (-) TimerEvent: {}
+[31.479862] (-) TimerEvent: {}
+[31.580282] (-) TimerEvent: {}
+[31.650744] (abb_egm_rws_managers) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libabb_egm_rws_managers.so\x1b[0m\n'}
+[31.680455] (-) TimerEvent: {}
+[31.780976] (-) TimerEvent: {}
+[31.881532] (-) TimerEvent: {}
+[31.982265] (-) TimerEvent: {}
+[32.082550] (-) TimerEvent: {}
+[32.182863] (-) TimerEvent: {}
+[32.184556] (abb_egm_rws_managers) StdoutLine: {'line': b'[100%] Built target abb_egm_rws_managers\n'}
+[32.207139] (abb_egm_rws_managers) CommandEnded: {'returncode': 0}
+[32.207869] (abb_egm_rws_managers) JobProgress: {'identifier': 'abb_egm_rws_managers', 'progress': 'install'}
+[32.208155] (abb_egm_rws_managers) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_MODULE_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[32.224244] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[32.224561] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include\n'}
+[32.224674] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers\n'}
+[32.224814] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/rws_manager.h\n'}
+[32.224968] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/system_data_parser.h\n'}
+[32.225123] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/utilities.h\n'}
+[32.225265] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/data_containers.h\n'}
+[32.225413] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/egm_manager.h\n'}
+[32.225629] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/robot_controller_description.proto\n'}
+[32.225799] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/robot_controller_description.pb.h\n'}
+[32.226558] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/abb_egm_rws_managers_export.h\n'}
+[32.226755] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersConfig.cmake\n'}
+[32.226950] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersConfigVersion.cmake\n'}
+[32.227098] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/package.xml\n'}
+[32.227359] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/libabb_egm_rws_managers.so\n'}
+[32.245986] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/libabb_egm_rws_managers.so" to ""\n'}
+[32.246197] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersTargets.cmake\n'}
+[32.246372] (abb_egm_rws_managers) StdoutLine: {'line': b'-- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersTargets-relwithdebinfo.cmake\n'}
+[32.249322] (abb_egm_rws_managers) CommandEnded: {'returncode': 0}
+[32.262980] (abb_egm_rws_managers) JobEnded: {'identifier': 'abb_egm_rws_managers', 'rc': 0}
+[32.264380] (abb_hardware_interface) JobStarted: {'identifier': 'abb_hardware_interface'}
+[32.279084] (abb_hardware_interface) JobProgress: {'identifier': 'abb_hardware_interface', 'progress': 'cmake'}
+[32.280272] (abb_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/tfg_ws/src/abb_ros2/abb_hardware_interface', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_hardware_interface'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_hardware_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib:/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_MODULE_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_hardware_interface', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[32.282931] (-) TimerEvent: {}
+[32.306039] (abb_hardware_interface) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[32.383051] (-) TimerEvent: {}
+[32.483420] (-) TimerEvent: {}
+[32.583753] (-) TimerEvent: {}
+[32.635832] (abb_hardware_interface) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[32.648491] (abb_hardware_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[32.683867] (-) TimerEvent: {}
+[32.784245] (-) TimerEvent: {}
+[32.811387] (abb_hardware_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[32.812613] (abb_hardware_interface) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[32.847529] (abb_hardware_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: regex system thread \n'}
+[32.850775] (abb_hardware_interface) StdoutLine: {'line': b'-- Searching for Poco library...\n'}
+[32.865723] (abb_hardware_interface) StdoutLine: {'line': b'--   Found Poco!\n'}
+[32.865897] (abb_hardware_interface) StdoutLine: {'line': b'-- components found: Foundation, Net, Util, XML.\n'}
+[32.884310] (-) TimerEvent: {}
+[32.886015] (abb_hardware_interface) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/aarch64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[32.893053] (abb_hardware_interface) StdoutLine: {'line': b'-- Found hardware_interface: 4.39.2 (/opt/ros/jazzy/share/hardware_interface/cmake)\n'}
+[32.962170] (abb_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[32.984383] (-) TimerEvent: {}
+[32.984645] (abb_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[33.010505] (abb_hardware_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[33.038863] (abb_hardware_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[33.084465] (-) TimerEvent: {}
+[33.184715] (-) TimerEvent: {}
+[33.284980] (-) TimerEvent: {}
+[33.385263] (-) TimerEvent: {}
+[33.409024] (abb_hardware_interface) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[33.485094] (abb_hardware_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[33.485326] (-) TimerEvent: {}
+[33.490790] (abb_hardware_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[33.529672] (abb_hardware_interface) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[33.585473] (-) TimerEvent: {}
+[33.631211] (abb_hardware_interface) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[33.636507] (abb_hardware_interface) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[33.658260] (abb_hardware_interface) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[33.663005] (abb_hardware_interface) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[33.677106] (abb_hardware_interface) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[33.685542] (-) TimerEvent: {}
+[33.693952] (abb_hardware_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[33.785644] (-) TimerEvent: {}
+[33.885949] (-) TimerEvent: {}
+[33.980117] (abb_hardware_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[33.986047] (-) TimerEvent: {}
+[34.086365] (-) TimerEvent: {}
+[34.159332] (abb_hardware_interface) StdoutLine: {'line': b'-- Configuring done (1.9s)\n'}
+[34.186462] (-) TimerEvent: {}
+[34.235673] (abb_hardware_interface) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[34.243396] (abb_hardware_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_hardware_interface\n'}
+[34.263890] (abb_hardware_interface) CommandEnded: {'returncode': 0}
+[34.264602] (abb_hardware_interface) JobProgress: {'identifier': 'abb_hardware_interface', 'progress': 'build'}
+[34.265016] (abb_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/tfg_ws/build/abb_hardware_interface', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_hardware_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib:/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_MODULE_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_hardware_interface', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[34.286613] (-) TimerEvent: {}
+[34.364256] (abb_hardware_interface) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/abb_hardware_interface.dir/src/abb_hardware_interface.cpp.o\x1b[0m\n'}
+[34.364585] (abb_hardware_interface) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/abb_hardware_interface.dir/src/utilities.cpp.o\x1b[0m\n'}
+[34.386729] (-) TimerEvent: {}
+[34.487099] (-) TimerEvent: {}
+[34.587482] (-) TimerEvent: {}
+[34.687845] (-) TimerEvent: {}
+[34.788222] (-) TimerEvent: {}
+[34.888710] (-) TimerEvent: {}
+[34.989372] (-) TimerEvent: {}
+[35.089727] (-) TimerEvent: {}
+[35.190046] (-) TimerEvent: {}
+[35.290443] (-) TimerEvent: {}
+[35.390815] (-) TimerEvent: {}
+[35.491221] (-) TimerEvent: {}
+[35.591827] (-) TimerEvent: {}
+[35.692202] (-) TimerEvent: {}
+[35.792595] (-) TimerEvent: {}
+[35.893090] (-) TimerEvent: {}
+[35.993559] (-) TimerEvent: {}
+[36.093931] (-) TimerEvent: {}
+[36.194290] (-) TimerEvent: {}
+[36.294669] (-) TimerEvent: {}
+[36.395048] (-) TimerEvent: {}
+[36.495433] (-) TimerEvent: {}
+[36.595824] (-) TimerEvent: {}
+[36.696200] (-) TimerEvent: {}
+[36.796618] (-) TimerEvent: {}
+[36.897120] (-) TimerEvent: {}
+[36.997450] (-) TimerEvent: {}
+[37.097857] (-) TimerEvent: {}
+[37.198182] (-) TimerEvent: {}
+[37.298863] (-) TimerEvent: {}
+[37.400257] (-) TimerEvent: {}
+[37.500588] (-) TimerEvent: {}
+[37.600969] (-) TimerEvent: {}
+[37.701362] (-) TimerEvent: {}
+[37.801760] (-) TimerEvent: {}
+[37.902153] (-) TimerEvent: {}
+[38.002529] (-) TimerEvent: {}
+[38.102895] (-) TimerEvent: {}
+[38.203263] (-) TimerEvent: {}
+[38.303759] (-) TimerEvent: {}
+[38.404192] (-) TimerEvent: {}
+[38.504670] (-) TimerEvent: {}
+[38.605065] (-) TimerEvent: {}
+[38.705579] (-) TimerEvent: {}
+[38.805962] (-) TimerEvent: {}
+[38.906322] (-) TimerEvent: {}
+[39.006854] (-) TimerEvent: {}
+[39.107235] (-) TimerEvent: {}
+[39.207774] (-) TimerEvent: {}
+[39.308184] (-) TimerEvent: {}
+[39.408588] (-) TimerEvent: {}
+[39.509105] (-) TimerEvent: {}
+[39.609517] (-) TimerEvent: {}
+[39.710092] (-) TimerEvent: {}
+[39.810486] (-) TimerEvent: {}
+[39.911100] (-) TimerEvent: {}
+[40.011474] (-) TimerEvent: {}
+[40.112087] (-) TimerEvent: {}
+[40.212461] (-) TimerEvent: {}
+[40.313008] (-) TimerEvent: {}
+[40.413432] (-) TimerEvent: {}
+[40.513824] (-) TimerEvent: {}
+[40.614475] (-) TimerEvent: {}
+[40.714875] (-) TimerEvent: {}
+[40.815268] (-) TimerEvent: {}
+[40.915859] (-) TimerEvent: {}
+[41.016262] (-) TimerEvent: {}
+[41.116884] (-) TimerEvent: {}
+[41.217307] (-) TimerEvent: {}
+[41.317810] (-) TimerEvent: {}
+[41.418201] (-) TimerEvent: {}
+[41.518582] (-) TimerEvent: {}
+[41.619155] (-) TimerEvent: {}
+[41.719562] (-) TimerEvent: {}
+[41.819952] (-) TimerEvent: {}
+[41.920453] (-) TimerEvent: {}
+[42.020863] (-) TimerEvent: {}
+[42.121379] (-) TimerEvent: {}
+[42.221764] (-) TimerEvent: {}
+[42.322153] (-) TimerEvent: {}
+[42.422680] (-) TimerEvent: {}
+[42.523102] (-) TimerEvent: {}
+[42.623616] (-) TimerEvent: {}
+[42.724038] (-) TimerEvent: {}
+[42.824625] (-) TimerEvent: {}
+[42.925022] (-) TimerEvent: {}
+[43.025539] (-) TimerEvent: {}
+[43.125964] (-) TimerEvent: {}
+[43.226478] (-) TimerEvent: {}
+[43.326858] (-) TimerEvent: {}
+[43.427402] (-) TimerEvent: {}
+[43.527858] (-) TimerEvent: {}
+[43.628261] (-) TimerEvent: {}
+[43.728691] (-) TimerEvent: {}
+[43.829086] (-) TimerEvent: {}
+[43.929494] (-) TimerEvent: {}
+[44.030092] (-) TimerEvent: {}
+[44.130460] (-) TimerEvent: {}
+[44.230841] (-) TimerEvent: {}
+[44.331227] (-) TimerEvent: {}
+[44.431616] (-) TimerEvent: {}
+[44.532025] (-) TimerEvent: {}
+[44.632597] (-) TimerEvent: {}
+[44.732989] (-) TimerEvent: {}
+[44.833362] (-) TimerEvent: {}
+[44.933836] (-) TimerEvent: {}
+[45.034238] (-) TimerEvent: {}
+[45.134597] (-) TimerEvent: {}
+[45.234978] (-) TimerEvent: {}
+[45.335360] (-) TimerEvent: {}
+[45.435744] (-) TimerEvent: {}
+[45.527344] (abb_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/tfg_ws/src/abb_ros2/abb_hardware_interface/src/abb_hardware_interface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual CallbackReturn abb_hardware_interface::ABBSystemHardware::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[45.527754] (abb_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ubuntu/tfg_ws/src/abb_ros2/abb_hardware_interface/src/abb_hardware_interface.cpp:28:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::\x1b[01;32m\x1b[Kon_init\x1b[m\x1b[K(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[45.529290] (abb_hardware_interface) StderrLine: {'line': b'   28 |   if (\x1b[01;35m\x1b[Khardware_interface::SystemInterface::on_init(info)\x1b[m\x1b[K != CallbackReturn::SUCCESS)\n'}
+[45.529428] (abb_hardware_interface) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[45.529537] (abb_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18\x1b[m\x1b[K,\n'}
+[45.529647] (abb_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/tfg_ws/src/abb_ros2/abb_hardware_interface/include/abb_hardware_interface/abb_hardware_interface.hpp:31\x1b[m\x1b[K,\n'}
+[45.529758] (abb_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ubuntu/tfg_ws/src/abb_ros2/abb_hardware_interface/src/abb_hardware_interface.cpp:16\x1b[m\x1b[K:\n'}
+[45.529882] (abb_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:235:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[45.529985] (abb_hardware_interface) StderrLine: {'line': b'  235 |   virtual CallbackReturn \x1b[01;36m\x1b[Kon_init\x1b[m\x1b[K(const HardwareInfo & hardware_info)\n'}
+[45.530083] (abb_hardware_interface) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[45.535834] (-) TimerEvent: {}
+[45.636179] (-) TimerEvent: {}
+[45.736676] (-) TimerEvent: {}
+[45.837078] (-) TimerEvent: {}
+[45.937668] (-) TimerEvent: {}
+[46.038069] (-) TimerEvent: {}
+[46.138626] (-) TimerEvent: {}
+[46.239029] (-) TimerEvent: {}
+[46.339414] (-) TimerEvent: {}
+[46.439842] (-) TimerEvent: {}
+[46.540243] (-) TimerEvent: {}
+[46.640798] (-) TimerEvent: {}
+[46.741230] (-) TimerEvent: {}
+[46.841720] (-) TimerEvent: {}
+[46.942115] (-) TimerEvent: {}
+[47.042432] (-) TimerEvent: {}
+[47.142773] (-) TimerEvent: {}
+[47.243062] (-) TimerEvent: {}
+[47.343325] (-) TimerEvent: {}
+[47.443579] (-) TimerEvent: {}
+[47.543819] (-) TimerEvent: {}
+[47.644061] (-) TimerEvent: {}
+[47.744330] (-) TimerEvent: {}
+[47.844630] (-) TimerEvent: {}
+[47.944975] (-) TimerEvent: {}
+[48.045320] (-) TimerEvent: {}
+[48.145599] (-) TimerEvent: {}
+[48.245871] (-) TimerEvent: {}
+[48.346127] (-) TimerEvent: {}
+[48.446375] (-) TimerEvent: {}
+[48.546604] (-) TimerEvent: {}
+[48.646834] (-) TimerEvent: {}
+[48.747102] (-) TimerEvent: {}
+[48.847409] (-) TimerEvent: {}
+[48.947692] (-) TimerEvent: {}
+[49.047953] (-) TimerEvent: {}
+[49.148190] (-) TimerEvent: {}
+[49.248437] (-) TimerEvent: {}
+[49.348700] (-) TimerEvent: {}
+[49.449007] (-) TimerEvent: {}
+[49.549339] (-) TimerEvent: {}
+[49.649674] (-) TimerEvent: {}
+[49.749993] (-) TimerEvent: {}
+[49.850277] (-) TimerEvent: {}
+[49.950614] (-) TimerEvent: {}
+[50.050893] (-) TimerEvent: {}
+[50.151149] (-) TimerEvent: {}
+[50.251402] (-) TimerEvent: {}
+[50.351646] (-) TimerEvent: {}
+[50.451910] (-) TimerEvent: {}
+[50.552171] (-) TimerEvent: {}
+[50.667453] (-) TimerEvent: {}
+[50.767742] (-) TimerEvent: {}
+[50.868045] (-) TimerEvent: {}
+[50.968312] (-) TimerEvent: {}
+[51.068567] (-) TimerEvent: {}
+[51.168836] (-) TimerEvent: {}
+[51.269145] (-) TimerEvent: {}
+[51.369525] (-) TimerEvent: {}
+[51.469860] (-) TimerEvent: {}
+[51.570264] (-) TimerEvent: {}
+[51.670835] (-) TimerEvent: {}
+[51.698954] (abb_hardware_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libabb_hardware_interface.so\x1b[0m\n'}
+[51.770997] (-) TimerEvent: {}
+[51.871500] (-) TimerEvent: {}
+[51.972359] (-) TimerEvent: {}
+[52.073042] (-) TimerEvent: {}
+[52.173558] (-) TimerEvent: {}
+[52.274377] (-) TimerEvent: {}
+[52.374931] (-) TimerEvent: {}
+[52.475583] (-) TimerEvent: {}
+[52.576213] (-) TimerEvent: {}
+[52.676622] (-) TimerEvent: {}
+[52.776997] (-) TimerEvent: {}
+[52.814792] (abb_hardware_interface) StdoutLine: {'line': b'[100%] Built target abb_hardware_interface\n'}
+[52.836570] (abb_hardware_interface) CommandEnded: {'returncode': 0}
+[52.837351] (abb_hardware_interface) JobProgress: {'identifier': 'abb_hardware_interface', 'progress': 'install'}
+[52.837724] (abb_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/tfg_ws/build/abb_hardware_interface'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_hardware_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib:/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_MODULE_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_hardware_interface', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[52.854145] (abb_hardware_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[52.854851] (abb_hardware_interface) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[52.855134] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface//abb_hardware_interface.xml\n'}
+[52.874374] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/lib/libabb_hardware_interface.so\n'}
+[52.877061] (-) TimerEvent: {}
+[52.892944] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/include/abb_hardware_interface/abb_hardware_interface.hpp\n'}
+[52.910003] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/include/abb_hardware_interface/utilities.hpp\n'}
+[52.928607] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/include/abb_hardware_interface/visibility_control.h\n'}
+[52.946479] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/environment/library_path.sh\n'}
+[52.964092] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/environment/library_path.dsv\n'}
+[52.977152] (-) TimerEvent: {}
+[52.981611] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/ament_index/resource_index/package_run_dependencies/abb_hardware_interface\n'}
+[53.000259] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/ament_index/resource_index/parent_prefix_path/abb_hardware_interface\n'}
+[53.018918] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/environment/ament_prefix_path.sh\n'}
+[53.036517] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/environment/ament_prefix_path.dsv\n'}
+[53.054180] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/environment/path.sh\n'}
+[53.072718] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/environment/path.dsv\n'}
+[53.077238] (-) TimerEvent: {}
+[53.090458] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/local_setup.bash\n'}
+[53.108371] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/local_setup.sh\n'}
+[53.126743] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/local_setup.zsh\n'}
+[53.144082] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/local_setup.dsv\n'}
+[53.160725] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/package.dsv\n'}
+[53.177332] (-) TimerEvent: {}
+[53.178512] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/ament_index/resource_index/packages/abb_hardware_interface\n'}
+[53.196859] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/abb_hardware_interface\n'}
+[53.215069] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[53.233620] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[53.252516] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[53.271108] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/cmake/abb_hardware_interfaceConfig.cmake\n'}
+[53.277418] (-) TimerEvent: {}
+[53.288804] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/cmake/abb_hardware_interfaceConfig-version.cmake\n'}
+[53.307202] (abb_hardware_interface) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_hardware_interface/share/abb_hardware_interface/package.xml\n'}
+[53.327423] (abb_hardware_interface) CommandEnded: {'returncode': 0}
+[53.350521] (abb_hardware_interface) JobEnded: {'identifier': 'abb_hardware_interface', 'rc': 0}
+[53.352121] (abb_rws_client) JobStarted: {'identifier': 'abb_rws_client'}
+[53.372401] (abb_rws_client) JobProgress: {'identifier': 'abb_rws_client', 'progress': 'cmake'}
+[53.373194] (abb_rws_client) Command: {'cmd': ['/usr/bin/cmake', '/home/ubuntu/tfg_ws/src/abb_ros2/abb_rws_client', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_rws_client'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_rws_client', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '192.168.1.131 54382 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ubuntu/tfg_ws/install/abb_hardware_interface/lib:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib:/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'PKG_CONFIG_PATH': '/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_hardware_interface:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CMAKE_MODULE_PATH': '/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_rws_client', 'SSH_CONNECTION': '192.168.1.131 54382 192.168.1.130 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_hardware_interface:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[53.377495] (-) TimerEvent: {}
+[53.477800] (-) TimerEvent: {}
+[53.481537] (abb_rws_client) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[53.577911] (-) TimerEvent: {}
+[53.585034] (abb_rws_client) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[53.613257] (abb_rws_client) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[53.678050] (-) TimerEvent: {}
+[53.778445] (-) TimerEvent: {}
+[53.783195] (abb_rws_client) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[53.799740] (abb_rws_client) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[53.800143] (abb_rws_client) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[53.800737] (abb_rws_client) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[53.814700] (abb_rws_client) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[53.878576] (-) TimerEvent: {}
+[53.978995] (-) TimerEvent: {}
+[54.000672] (abb_rws_client) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[54.017066] (abb_rws_client) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[54.017519] (abb_rws_client) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[54.018294] (abb_rws_client) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[54.023295] (abb_rws_client) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[54.079068] (-) TimerEvent: {}
+[54.179425] (-) TimerEvent: {}
+[54.258570] (abb_rws_client) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[54.279503] (-) TimerEvent: {}
+[54.379269] (abb_rws_client) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[54.379569] (-) TimerEvent: {}
+[54.438882] (abb_rws_client) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[54.479705] (-) TimerEvent: {}
+[54.580115] (-) TimerEvent: {}
+[54.608221] (abb_rws_client) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[54.609712] (abb_rws_client) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[54.645301] (abb_rws_client) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: regex system thread \n'}
+[54.648723] (abb_rws_client) StdoutLine: {'line': b'-- Searching for Poco library...\n'}
+[54.664186] (abb_rws_client) StdoutLine: {'line': b'--   Found Poco!\n'}
+[54.664349] (abb_rws_client) StdoutLine: {'line': b'-- components found: Foundation, Net, Util, XML.\n'}
+[54.680187] (-) TimerEvent: {}
+[54.685064] (abb_rws_client) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/aarch64-linux-gnu/libprotobuf.so (found version "3.21.12") \n'}
+[54.695239] (abb_rws_client) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:36 (find_package):\n'}
+[54.695487] (abb_rws_client) StderrLine: {'line': b'  By not providing "Findabb_egm_msgs.cmake" in CMAKE_MODULE_PATH this project\n'}
+[54.695597] (abb_rws_client) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[54.695685] (abb_rws_client) StderrLine: {'line': b'  "abb_egm_msgs", but CMake did not find one.\n'}
+[54.695770] (abb_rws_client) StderrLine: {'line': b'\n'}
+[54.695878] (abb_rws_client) StderrLine: {'line': b'  Could not find a package configuration file provided by "abb_egm_msgs" with\n'}
+[54.695967] (abb_rws_client) StderrLine: {'line': b'  any of the following names:\n'}
+[54.696053] (abb_rws_client) StderrLine: {'line': b'\n'}
+[54.696137] (abb_rws_client) StderrLine: {'line': b'    abb_egm_msgsConfig.cmake\n'}
+[54.696219] (abb_rws_client) StderrLine: {'line': b'    abb_egm_msgs-config.cmake\n'}
+[54.696302] (abb_rws_client) StderrLine: {'line': b'\n'}
+[54.696386] (abb_rws_client) StderrLine: {'line': b'  Add the installation prefix of "abb_egm_msgs" to CMAKE_PREFIX_PATH or set\n'}
+[54.696469] (abb_rws_client) StderrLine: {'line': b'  "abb_egm_msgs_DIR" to a directory containing one of the above files.  If\n'}
+[54.696553] (abb_rws_client) StderrLine: {'line': b'  "abb_egm_msgs" provides a separate development package or SDK, be sure it\n'}
+[54.696637] (abb_rws_client) StderrLine: {'line': b'  has been installed.\n'}
+[54.696718] (abb_rws_client) StderrLine: {'line': b'\n'}
+[54.696813] (abb_rws_client) StderrLine: {'line': b'\x1b[0m\n'}
+[54.696907] (abb_rws_client) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[54.707585] (abb_rws_client) CommandEnded: {'returncode': 1}
+[54.735316] (abb_rws_client) JobEnded: {'identifier': 'abb_rws_client', 'rc': 1}
+[54.745919] (-) EventReactorShutdown: {}

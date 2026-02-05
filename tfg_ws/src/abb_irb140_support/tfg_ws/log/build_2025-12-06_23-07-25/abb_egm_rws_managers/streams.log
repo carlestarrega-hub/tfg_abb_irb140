@@ -1,0 +1,47 @@
+[0.017s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers': CMAKE_MODULE_PATH=/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_egm_rws_managers -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_egm_rws_managers
+[0.055s] -- Searching for Poco library...
+[0.068s] --   Found Poco!
+[0.069s] -- components found: Foundation, Net, Util, XML.
+[0.089s] -- Found Protobuf: /usr/lib/aarch64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[0.090s] -- Generating protobuf C++ for: proto/robot_controller_description.proto
+[0.090s] -- abb_egm_rws_managers: Defaulting build type to RelWithDebInfo
+[0.094s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[0.258s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[0.259s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[0.422s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[0.422s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[0.587s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[0.592s] -- Configuring done (0.6s)
+[0.602s] -- Generating done (0.0s)
+[0.604s] -- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_egm_rws_managers
+[0.610s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers' returned '0': CMAKE_MODULE_PATH=/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_egm_rws_managers -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_egm_rws_managers
+[0.612s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers': CMAKE_MODULE_PATH=/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_egm_rws_managers -- -j4 -l4
+[0.681s] [ 14%] [34m[1mRunning cpp protocol buffer compiler on proto/robot_controller_description.proto[0m
+[0.771s] [ 71%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/rws_manager.cpp.o[0m
+[0.771s] [ 71%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/utilities.cpp.o[0m
+[0.771s] [ 71%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/egm_manager.cpp.o[0m
+[0.771s] [ 71%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/src/system_data_parser.cpp.o[0m
+[16.544s] [ 85%] [32mBuilding CXX object CMakeFiles/abb_egm_rws_managers.dir/robot_controller_description.pb.cc.o[0m
+[27.951s] [100%] [32m[1mLinking CXX shared library libabb_egm_rws_managers.so[0m
+[28.485s] [100%] Built target abb_egm_rws_managers
+[28.507s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers' returned '0': CMAKE_MODULE_PATH=/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_egm_rws_managers -- -j4 -l4
+[28.509s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers': CMAKE_MODULE_PATH=/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_egm_rws_managers
+[28.524s] -- Install configuration: "RelWithDebInfo"
+[28.525s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include
+[28.525s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers
+[28.525s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/rws_manager.h
+[28.525s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/system_data_parser.h
+[28.525s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/utilities.h
+[28.525s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/data_containers.h
+[28.525s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/egm_manager.h
+[28.526s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/robot_controller_description.proto
+[28.526s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/robot_controller_description.pb.h
+[28.527s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/include/abb_egm_rws_managers/abb_egm_rws_managers_export.h
+[28.527s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersConfig.cmake
+[28.527s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersConfigVersion.cmake
+[28.527s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/package.xml
+[28.527s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/libabb_egm_rws_managers.so
+[28.546s] -- Set non-toolchain portion of runtime path of "/home/ubuntu/tfg_ws/install/abb_egm_rws_managers/lib/libabb_egm_rws_managers.so" to ""
+[28.546s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersTargets.cmake
+[28.546s] -- Installing: /home/ubuntu/tfg_ws/install/abb_egm_rws_managers/share/abb_egm_rws_managers/abb_egm_rws_managersTargets-relwithdebinfo.cmake
+[28.549s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_egm_rws_managers' returned '0': CMAKE_MODULE_PATH=/home/ubuntu/tfg_ws/install/abb_librws/share/abb_librws/cmake CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib:/home/ubuntu/tfg_ws/install/abb_libegm/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/home/ubuntu/tfg_ws/install/abb_librws/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_librws/lib/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/aarch64-linux-gnu/pkgconfig:/home/ubuntu/tfg_ws/install/abb_libegm/lib/pkgconfig /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_egm_rws_managers

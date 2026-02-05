@@ -1,0 +1,4 @@
+source;share/abb_irb140_moveit_config/local_setup.bash
+source;share/abb_irb140_moveit_config/local_setup.dsv
+source;share/abb_irb140_moveit_config/local_setup.sh
+source;share/abb_irb140_moveit_config/local_setup.zsh

@@ -1,0 +1,72 @@
+[0.023s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_libegm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_libegm -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_libegm
+[0.157s] -- The CXX compiler identification is GNU 13.3.0
+[0.187s] -- Detecting CXX compiler ABI info
+[0.429s] -- Detecting CXX compiler ABI info - done
+[0.446s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.446s] -- Detecting CXX compile features
+[0.447s] -- Detecting CXX compile features - done
+[0.783s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: regex system thread 
+[0.862s] -- Found Protobuf: /usr/lib/aarch64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[0.862s] -- Generating protobuf C++ for: proto/egm.proto;proto/egm_wrapper.proto;proto/egm_wrapper_trajectory.proto
+[0.866s] -- Found Threads: TRUE  
+[0.875s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[1.094s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[1.096s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[1.333s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[1.333s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[1.569s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[1.579s] -- Configuring done (1.5s)
+[1.598s] -- Generating done (0.0s)
+[1.603s] -- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_libegm
+[1.618s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_libegm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_libegm -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_libegm
+[1.621s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_libegm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_libegm -- -j4 -l4
+[1.714s] [  6%] [34m[1mRunning cpp protocol buffer compiler on proto/egm_wrapper_trajectory.proto[0m
+[1.736s] [ 13%] [34m[1mRunning cpp protocol buffer compiler on proto/egm.proto[0m
+[1.739s] [ 20%] [34m[1mRunning cpp protocol buffer compiler on proto/egm_wrapper.proto[0m
+[1.911s] [ 26%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/src/egm_base_interface.cpp.o[0m
+[1.918s] [ 33%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/src/egm_common_auxiliary.cpp.o[0m
+[1.920s] [ 40%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/src/egm_common.cpp.o[0m
+[1.920s] [ 46%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/src/egm_controller_interface.cpp.o[0m
+[5.135s] [ 53%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/src/egm_interpolator.cpp.o[0m
+[7.284s] [ 60%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/src/egm_logger.cpp.o[0m
+[9.015s] [ 66%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/src/egm_udp_server.cpp.o[0m
+[11.171s] In file included from [01m[K/usr/include/boost/bind/detail/requires_cxx11.hpp:9[m[K,
+[11.171s]                  from [01m[K/usr/include/boost/bind/bind.hpp:24[m[K,
+[11.171s]                  from [01m[K/usr/include/boost/bind.hpp:29[m[K,
+[11.171s]                  from [01m[K/home/ubuntu/tfg_ws/src/abb_libegm/src/egm_udp_server.cpp:37[m[K:
+[11.171s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[11.171s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[11.172s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[11.555s] [ 73%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/src/egm_trajectory_interface.cpp.o[0m
+[14.022s] [ 80%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/egm.pb.cc.o[0m
+[15.440s] [ 86%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/egm_wrapper.pb.cc.o[0m
+[17.238s] [ 93%] [32mBuilding CXX object CMakeFiles/abb_libegm.dir/egm_wrapper_trajectory.pb.cc.o[0m
+[22.691s] [100%] [32m[1mLinking CXX shared library libabb_libegm.so[0m
+[23.161s] [100%] Built target abb_libegm
+[23.186s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_libegm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_libegm -- -j4 -l4
+[23.188s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_libegm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_libegm
+[23.206s] -- Install configuration: ""
+[23.206s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include
+[23.207s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm
+[23.207s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_base_interface.h
+[23.207s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_logger.h
+[23.207s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_udp_server.h
+[23.207s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_common_auxiliary.h
+[23.207s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_controller_interface.h
+[23.207s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_interpolator.h
+[23.207s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_trajectory_interface.h
+[23.208s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_common.h
+[23.208s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm.proto
+[23.208s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_wrapper.proto
+[23.208s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_wrapper_trajectory.proto
+[23.208s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm.pb.h
+[23.209s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_wrapper.pb.h
+[23.210s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/egm_wrapper_trajectory.pb.h
+[23.210s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/include/abb_libegm/abb_libegm_export.h
+[23.211s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/lib/libabb_libegm.so
+[23.217s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/abb_libegmConfig.cmake
+[23.217s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/abb_libegmConfigVersion.cmake
+[23.217s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/package.xml
+[23.218s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/abb_libegmTargets.cmake
+[23.218s] -- Installing: /home/ubuntu/tfg_ws/install/abb_libegm/share/abb_libegm/abb_libegmTargets-noconfig.cmake
+[23.222s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_libegm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_libegm

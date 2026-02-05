@@ -1,0 +1,28 @@
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: regex system thread 
+[31mCMake Error at CMakeLists.txt:36 (find_package):
+  By not providing "Findabb_librws.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "abb_librws", but CMake did not find one.
+
+  Could not find a package configuration file provided by "abb_librws" with
+  any of the following names:
+
+    abb_librwsConfig.cmake
+    abb_librws-config.cmake
+
+  Add the installation prefix of "abb_librws" to CMAKE_PREFIX_PATH or set
+  "abb_librws_DIR" to a directory containing one of the above files.  If
+  "abb_librws" provides a separate development package or SDK, be sure it has
+  been installed.
+
+[0m
+-- Configuring incomplete, errors occurred!

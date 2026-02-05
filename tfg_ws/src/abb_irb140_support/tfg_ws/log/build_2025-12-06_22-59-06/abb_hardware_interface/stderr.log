@@ -1,0 +1,17 @@
+[31mCMake Error at CMakeLists.txt:33 (find_package):
+  By not providing "Findabb_egm_rws_managers.cmake" in CMAKE_MODULE_PATH this
+  project has asked CMake to find a package configuration file provided by
+  "abb_egm_rws_managers", but CMake did not find one.
+
+  Could not find a package configuration file provided by
+  "abb_egm_rws_managers" with any of the following names:
+
+    abb_egm_rws_managersConfig.cmake
+    abb_egm_rws_managers-config.cmake
+
+  Add the installation prefix of "abb_egm_rws_managers" to CMAKE_PREFIX_PATH
+  or set "abb_egm_rws_managers_DIR" to a directory containing one of the
+  above files.  If "abb_egm_rws_managers" provides a separate development
+  package or SDK, be sure it has been installed.
+
+[0m

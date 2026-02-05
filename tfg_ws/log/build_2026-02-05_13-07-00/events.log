@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.004520] (abb_irb140_support) JobQueued: {'identifier': 'abb_irb140_support', 'dependencies': OrderedDict()}
+[0.005593] (abb_irb140_support) JobStarted: {'identifier': 'abb_irb140_support'}
+[0.077573] (abb_irb140_support) JobProgress: {'identifier': 'abb_irb140_support', 'progress': 'cmake'}
+[0.082828] (abb_irb140_support) JobProgress: {'identifier': 'abb_irb140_support', 'progress': 'build'}
+[0.086013] (abb_irb140_support) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/tfg_ws/build/abb_irb140_support', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_irb140_support', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '2a0c:5a82:a506:6d00:f01d:c507:93dd:74af 63666 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_irb140_support:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_irb140_support', 'SSH_CONNECTION': '2a0c:5a82:a506:6d00:f01d:c507:93dd:74af 63666 2a0c:5a82:a506:6d00:e1c4:606f:a28f:431 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_irb140_support:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.101620] (-) TimerEvent: {}
+[0.203547] (-) TimerEvent: {}
+[0.308666] (-) TimerEvent: {}
+[0.410228] (-) TimerEvent: {}
+[0.422700] (abb_irb140_support) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.512020] (-) TimerEvent: {}
+[0.613539] (-) TimerEvent: {}
+[0.717929] (-) TimerEvent: {}
+[0.819950] (-) TimerEvent: {}
+[0.921798] (-) TimerEvent: {}
+[1.024294] (-) TimerEvent: {}
+[1.126012] (-) TimerEvent: {}
+[1.228425] (-) TimerEvent: {}
+[1.330304] (-) TimerEvent: {}
+[1.432728] (-) TimerEvent: {}
+[1.534619] (-) TimerEvent: {}
+[1.637860] (-) TimerEvent: {}
+[1.739383] (-) TimerEvent: {}
+[1.841526] (-) TimerEvent: {}
+[1.943243] (-) TimerEvent: {}
+[2.045566] (-) TimerEvent: {}
+[2.147206] (-) TimerEvent: {}
+[2.246061] (abb_irb140_support) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.247399] (-) TimerEvent: {}
+[2.349113] (-) TimerEvent: {}
+[2.354790] (abb_irb140_support) StdoutLine: {'line': b'-- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)\n'}
+[2.449454] (-) TimerEvent: {}
+[2.550832] (-) TimerEvent: {}
+[2.560564] (abb_irb140_support) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: /usr/lib/aarch64-linux-gnu/cmake/tinyxml2\n'}
+[2.631703] (abb_irb140_support) StdoutLine: {'line': b'-- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)\n'}
+[2.653342] (-) TimerEvent: {}
+[2.755022] (-) TimerEvent: {}
+[2.858991] (-) TimerEvent: {}
+[2.960595] (-) TimerEvent: {}
+[3.062153] (-) TimerEvent: {}
+[3.164326] (-) TimerEvent: {}
+[3.266093] (-) TimerEvent: {}
+[3.368459] (-) TimerEvent: {}
+[3.464537] (abb_irb140_support) StdoutLine: {'line': b'-- Configuring done (3.1s)\n'}
+[3.468699] (-) TimerEvent: {}
+[3.508617] (abb_irb140_support) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.523577] (abb_irb140_support) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_irb140_support\n'}
+[3.569041] (-) TimerEvent: {}
+[3.673110] (-) TimerEvent: {}
+[3.697901] (abb_irb140_support) CommandEnded: {'returncode': 0}
+[3.700833] (abb_irb140_support) JobProgress: {'identifier': 'abb_irb140_support', 'progress': 'install'}
+[3.765710] (abb_irb140_support) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/tfg_ws/build/abb_irb140_support'], 'cwd': '/home/ubuntu/tfg_ws/build/abb_irb140_support', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '2a0c:5a82:a506:6d00:f01d:c507:93dd:74af 63666 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/tfg_ws/src', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/tfg_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '1', 'PATH': '/home/ubuntu/.local/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_irb140_support:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/ubuntu/tfg_ws/build/abb_irb140_support', 'SSH_CONNECTION': '2a0c:5a82:a506:6d00:f01d:c507:93dd:74af 63666 2a0c:5a82:a506:6d00:e1c4:606f:a28f:431 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/tfg_ws/install/abb_irb140_support:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.773413] (-) TimerEvent: {}
+[3.821297] (abb_irb140_support) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.824001] (abb_irb140_support) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.826480] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/launch/display_irb140.launch.py\n'}
+[3.828183] (abb_irb140_support) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/common_materials.xacro\n'}
+[3.876090] (-) TimerEvent: {}
+[3.892974] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140.urdf.xacro\n'}
+[3.895084] (abb_irb140_support) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140.xacro\n'}
+[3.955485] (abb_irb140_support) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140_macro.xacro\n'}
+[3.976451] (-) TimerEvent: {}
+[4.020324] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140_moveit.urdf\n'}
+[4.021346] (abb_irb140_support) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140_real.urdf\n'}
+[4.076907] (-) TimerEvent: {}
+[4.093087] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/test_cube.urdf.xacro\n'}
+[4.097464] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/base_link.stl\n'}
+[4.099010] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_1.stl\n'}
+[4.103284] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_2.stl\n'}
+[4.104473] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_3.stl\n'}
+[4.105282] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_4.stl\n'}
+[4.109992] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_5.stl\n'}
+[4.113461] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_6.stl\n'}
+[4.114847] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/base_link.stl\n'}
+[4.115617] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_1.stl\n'}
+[4.118281] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_2.stl\n'}
+[4.119674] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_3.stl\n'}
+[4.121486] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_4.stl\n'}
+[4.122727] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_5.stl\n'}
+[4.124972] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_6.stl\n'}
+[4.126201] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/package_run_dependencies/abb_irb140_support\n'}
+[4.126553] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/parent_prefix_path/abb_irb140_support\n'}
+[4.127761] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.sh\n'}
+[4.129261] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.dsv\n'}
+[4.131208] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.sh\n'}
+[4.132953] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.dsv\n'}
+[4.134389] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.bash\n'}
+[4.135417] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.sh\n'}
+[4.137012] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.zsh\n'}
+[4.138821] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.dsv\n'}
+[4.140603] (abb_irb140_support) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.dsv\n'}
+[4.178953] (-) TimerEvent: {}
+[4.203928] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/packages/abb_irb140_support\n'}
+[4.205964] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig.cmake\n'}
+[4.207511] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig-version.cmake\n'}
+[4.208506] (abb_irb140_support) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.xml\n'}
+[4.218469] (abb_irb140_support) CommandEnded: {'returncode': 0}
+[4.279863] (-) TimerEvent: {}
+[4.381669] (-) TimerEvent: {}
+[4.483082] (-) TimerEvent: {}
+[4.542922] (abb_irb140_support) JobEnded: {'identifier': 'abb_irb140_support', 'rc': 0}
+[4.545458] (-) EventReactorShutdown: {}

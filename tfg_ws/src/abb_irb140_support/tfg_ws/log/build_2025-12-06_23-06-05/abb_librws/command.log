@@ -1,0 +1,2 @@
+Invoking command in '/home/ubuntu/tfg_ws/build/abb_librws': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_librws -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_librws
+Invoked command in '/home/ubuntu/tfg_ws/build/abb_librws' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_librws -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_librws

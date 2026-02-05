@@ -1,0 +1,61 @@
+[0.025s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb140_moveit_config': CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_irb140_support:/home/ubuntu/tfg_ws/install/abb_ros2:/home/ubuntu/tfg_ws/install/abb_resources:/home/ubuntu/tfg_ws/install/abb_hardware_interface:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/home/ubuntu/tfg_ws/install/abb_bringup:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_irb140_moveit_config -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_irb140_moveit_config
+[0.600s] -- The C compiler identification is GNU 13.3.0
+[0.991s] -- The CXX compiler identification is GNU 13.3.0
+[1.030s] -- Detecting C compiler ABI info
+[1.231s] -- Detecting C compiler ABI info - done
+[1.246s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.247s] -- Detecting C compile features
+[1.248s] -- Detecting C compile features - done
+[1.265s] -- Detecting CXX compiler ABI info
+[1.448s] -- Detecting CXX compiler ABI info - done
+[1.463s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.463s] -- Detecting CXX compile features
+[1.464s] -- Detecting CXX compile features - done
+[1.473s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.710s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.064s] -- Configuring done (1.9s)
+[2.069s] -- Generating done (0.0s)
+[2.072s] -- Build files have been written to: /home/ubuntu/tfg_ws/build/abb_irb140_moveit_config
+[2.080s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb140_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_irb140_support:/home/ubuntu/tfg_ws/install/abb_ros2:/home/ubuntu/tfg_ws/install/abb_resources:/home/ubuntu/tfg_ws/install/abb_hardware_interface:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/home/ubuntu/tfg_ws/install/abb_bringup:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake /home/ubuntu/tfg_ws/src/abb_irb140_moveit_config -DCMAKE_INSTALL_PREFIX=/home/ubuntu/tfg_ws/install/abb_irb140_moveit_config
+[2.082s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb140_moveit_config': CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_irb140_support:/home/ubuntu/tfg_ws/install/abb_ros2:/home/ubuntu/tfg_ws/install/abb_resources:/home/ubuntu/tfg_ws/install/abb_hardware_interface:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/home/ubuntu/tfg_ws/install/abb_bringup:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_irb140_moveit_config -- -j4 -l4
+[2.155s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb140_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_irb140_support:/home/ubuntu/tfg_ws/install/abb_ros2:/home/ubuntu/tfg_ws/install/abb_resources:/home/ubuntu/tfg_ws/install/abb_hardware_interface:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/home/ubuntu/tfg_ws/install/abb_bringup:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --build /home/ubuntu/tfg_ws/build/abb_irb140_moveit_config -- -j4 -l4
+[2.175s] Invoking command in '/home/ubuntu/tfg_ws/build/abb_irb140_moveit_config': CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_irb140_support:/home/ubuntu/tfg_ws/install/abb_ros2:/home/ubuntu/tfg_ws/install/abb_resources:/home/ubuntu/tfg_ws/install/abb_hardware_interface:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/home/ubuntu/tfg_ws/install/abb_bringup:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_irb140_moveit_config
+[2.190s] -- Install configuration: ""
+[2.190s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/ament_index/resource_index/package_run_dependencies/abb_irb140_moveit_config
+[2.190s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/ament_index/resource_index/parent_prefix_path/abb_irb140_moveit_config
+[2.190s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/environment/ament_prefix_path.sh
+[2.191s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/environment/ament_prefix_path.dsv
+[2.191s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/environment/path.sh
+[2.191s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/environment/path.dsv
+[2.191s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/local_setup.bash
+[2.191s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/local_setup.sh
+[2.191s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/local_setup.zsh
+[2.192s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/local_setup.dsv
+[2.192s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/package.dsv
+[2.192s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/ament_index/resource_index/packages/abb_irb140_moveit_config
+[2.192s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/cmake/abb_irb140_moveit_configConfig.cmake
+[2.192s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/cmake/abb_irb140_moveit_configConfig-version.cmake
+[2.192s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/package.xml
+[2.193s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch
+[2.193s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/spawn_controllers.launch.py
+[2.193s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/__pycache__
+[2.193s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/__pycache__/demo.launch.cpython-312.pyc
+[2.193s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[2.193s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/rsp.launch.py
+[2.193s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/setup_assistant.launch.py
+[2.194s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/demo.launch.py
+[2.194s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/warehouse_db.launch.py
+[2.194s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/moveit_rviz.launch.py
+[2.194s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/launch/move_group.launch.py
+[2.194s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config
+[2.194s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config/initial_positions.yaml
+[2.194s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config/joint_limits.yaml
+[2.194s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config/pilz_cartesian_limits.yaml
+[2.194s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config/moveit.rviz
+[2.195s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config/moveit_controllers.yaml
+[2.195s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config/abb_irb140.srdf
+[2.195s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config/kinematics.yaml
+[2.195s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config/ros2_controllers.yaml
+[2.195s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/config/ompl_planning.yaml
+[2.195s] -- Installing: /home/ubuntu/tfg_ws/install/abb_irb140_moveit_config/share/abb_irb140_moveit_config/.setup_assistant
+[2.198s] Invoked command in '/home/ubuntu/tfg_ws/build/abb_irb140_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/ubuntu/tfg_ws/install/abb_irb140_support:/home/ubuntu/tfg_ws/install/abb_ros2:/home/ubuntu/tfg_ws/install/abb_resources:/home/ubuntu/tfg_ws/install/abb_hardware_interface:/home/ubuntu/tfg_ws/install/abb_egm_rws_managers:/home/ubuntu/tfg_ws/install/abb_librws:/home/ubuntu/tfg_ws/install/abb_libegm:/home/ubuntu/tfg_ws/install/abb_bringup:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy /usr/bin/cmake --install /home/ubuntu/tfg_ws/build/abb_irb140_moveit_config

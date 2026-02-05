@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "config" "launch" "meshes" "urdf" "DESTINATION" "share/abb_irb140_support")
-ament_cmake_symlink_install_directory("/home/ubuntu/tfg_ws/src/abb_irb140_support" DIRECTORY "config" "launch" "meshes" "urdf" "DESTINATION" "share/abb_irb140_support")
+# install(DIRECTORY "launch" "urdf" "meshes" "DESTINATION" "share/abb_irb140_support")
+ament_cmake_symlink_install_directory("/home/ubuntu/tfg_ws/src/abb_irb140_support" DIRECTORY "launch" "urdf" "meshes" "DESTINATION" "share/abb_irb140_support")
 
 # install(FILES "/home/ubuntu/tfg_ws/build/abb_irb140_support/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/abb_irb140_support" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ubuntu/tfg_ws/src/abb_irb140_support" FILES "/home/ubuntu/tfg_ws/build/abb_irb140_support/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/abb_irb140_support" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

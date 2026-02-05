@@ -1,0 +1,67 @@
+[0.016s] Invoking command in '/home/carles/tfg_ws/build/abb_irb140_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carles/tfg_ws/install/abb_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/carles/tfg_ws/src/abb_irb140_support -DCMAKE_INSTALL_PREFIX=/home/carles/tfg_ws/install/abb_irb140_support
+[0.378s] -- The C compiler identification is GNU 13.3.0
+[0.956s] -- The CXX compiler identification is GNU 13.3.0
+[0.991s] -- Detecting C compiler ABI info
+[1.159s] -- Detecting C compiler ABI info - done
+[1.166s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.167s] -- Detecting C compile features
+[1.169s] -- Detecting C compile features - done
+[1.185s] -- Detecting CXX compiler ABI info
+[1.302s] -- Detecting CXX compiler ABI info - done
+[1.310s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.310s] -- Detecting CXX compile features
+[1.310s] -- Detecting CXX compile features - done
+[1.324s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.499s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.686s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[1.752s] -- Found TinyXML2 via Config file: /usr/lib/x86_64-linux-gnu/cmake/tinyxml2
+[1.768s] -- Found xacro: 2.1.1 (/opt/ros/jazzy/share/xacro/cmake)
+[1.889s] -- Configuring done (1.9s)
+[1.891s] -- Generating done (0.0s)
+[1.892s] -- Build files have been written to: /home/carles/tfg_ws/build/abb_irb140_support
+[1.899s] Invoked command in '/home/carles/tfg_ws/build/abb_irb140_support' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carles/tfg_ws/install/abb_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/carles/tfg_ws/src/abb_irb140_support -DCMAKE_INSTALL_PREFIX=/home/carles/tfg_ws/install/abb_irb140_support
+[1.899s] Invoking command in '/home/carles/tfg_ws/build/abb_irb140_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carles/tfg_ws/install/abb_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/carles/tfg_ws/build/abb_irb140_support -- -j4 -l4
+[1.933s] Invoked command in '/home/carles/tfg_ws/build/abb_irb140_support' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carles/tfg_ws/install/abb_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/carles/tfg_ws/build/abb_irb140_support -- -j4 -l4
+[1.943s] Invoking command in '/home/carles/tfg_ws/build/abb_irb140_support': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carles/tfg_ws/install/abb_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/carles/tfg_ws/build/abb_irb140_support
+[1.951s] -- Install configuration: ""
+[1.951s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/launch
+[1.952s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/launch/display_irb140.launch.py
+[1.952s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf
+[1.952s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140_moveit.urdf
+[1.952s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/test_cube.urdf.xacro
+[1.953s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140.urdf.xacro
+[1.953s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/urdf/irb140_macro.xacro
+[1.953s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes
+[1.954s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140
+[1.954s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual
+[1.954s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_3.stl
+[1.956s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_6.stl
+[1.958s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/base_link.stl
+[1.959s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_4.stl
+[1.964s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_2.stl
+[1.964s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_5.stl
+[1.966s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/visual/link_1.stl
+[1.970s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision
+[1.970s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_3.stl
+[1.970s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_6.stl
+[1.970s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/base_link.stl
+[1.971s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_4.stl
+[1.972s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_2.stl
+[1.973s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_5.stl
+[1.974s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/meshes/irb140/collision/link_1.stl
+[1.975s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/package_run_dependencies/abb_irb140_support
+[1.975s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/parent_prefix_path/abb_irb140_support
+[1.975s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.sh
+[1.975s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/ament_prefix_path.dsv
+[1.975s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.sh
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/environment/path.dsv
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.bash
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.sh
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.zsh
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/local_setup.dsv
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.dsv
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/ament_index/resource_index/packages/abb_irb140_support
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig.cmake
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/cmake/abb_irb140_supportConfig-version.cmake
+[1.976s] -- Installing: /home/carles/tfg_ws/install/abb_irb140_support/share/abb_irb140_support/package.xml
+[1.978s] Invoked command in '/home/carles/tfg_ws/build/abb_irb140_support' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carles/tfg_ws/install/abb_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/carles/tfg_ws/build/abb_irb140_support
