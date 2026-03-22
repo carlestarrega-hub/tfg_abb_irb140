@@ -7,6 +7,12 @@ from moveit_msgs.msg import Constraints, PositionConstraint, OrientationConstrai
 from shape_msgs.msg import SolidPrimitive
 from rclpy.action import ActionClient
 import math
+import socket
+import time
+
+# --- CONFIGURACIÓN DEL ROBOT ---
+ROBOT_IP = "192.168.125.1"
+ROBOT_PORT = 11000
 
 # --- UTILIDADES ---
 def euler_to_quaternion(roll, pitch, yaw):
@@ -22,41 +28,66 @@ class CerebroWeb(Node):
         super().__init__('cerebro_web_node')
         self.sub = self.create_subscription(String, '/orden_web', self.listener_callback, 10)
         self.pub_feedback = self.create_publisher(String, '/web_feedback', 10)
+        
+        # Cliente de MoveIt (Para RViz)
         self.cli = ActionClient(self, MoveGroup, 'move_action')
-        self.get_logger().info('🧠 CEREBRO CON DETECCIÓN DE ERRORES LISTO')
+        self.ultimo_comando = ""
+        
+        self.get_logger().info('🧠 CEREBRO HÍBRIDO (SIMULACIÓN + REAL) LISTO')
 
     def enviar_feedback(self, mensaje):
         msg = String()
         msg.data = mensaje
         self.pub_feedback.publish(msg)
-        # Log en terminal para que tú también lo veas
         if "ERROR" in mensaje:
             self.get_logger().error(mensaje)
         else:
             self.get_logger().info(mensaje)
 
+    def enviar_al_robot_real(self, comando_str):
+        """Intenta enviar el comando al robot. Si falla, asume que es simulación."""
+        try:
+            # self.get_logger().info(f"🔌 Intentando conectar con {ROBOT_IP}...")
+            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            s.settimeout(1.5) # Espera maximo 1.5 seg
+            s.connect((ROBOT_IP, ROBOT_PORT))
+            s.send(comando_str.encode('utf-8'))
+            respuesta = s.recv(1024).decode('utf-8')
+            s.close()
+            return True
+        except Exception:
+            # Falla silenciosamente (escondemos el error rojo)
+            return False
+
     def listener_callback(self, msg):
         cmd = msg.data
+        self.ultimo_comando = cmd
+        self.get_logger().info(f"📨 Recibido: {cmd}")
         
         if cmd == "STOP":
             self.cli.cancel_all_goals()
-            self.enviar_feedback("ERROR: ⛔ PARADA DE EMERGENCIA")
+            exito = self.enviar_al_robot_real("STOP")
+            if exito:
+                self.enviar_feedback("INFO: ⛔ PARADA EN ROBOT REAL")
+            else:
+                self.enviar_feedback("INFO: ⛔ PARADA EN SIMULACIÓN")
             return
         
         if cmd.startswith("MOVE:"):
             try:
+                # 1. Extraer coordenadas
                 parts = cmd.replace("MOVE:", "").split(",")
                 x, y, z = map(float, parts[:3])
                 q = euler_to_quaternion(*parts[3:])
                 
-                self.enviar_feedback("INFO: ⏳ Calculando trayectoria...")
+                self.enviar_feedback("INFO: ⏳ Calculando trayectoria en RViz...")
 
+                # 2. Configurar MoveIt para RViz
                 goal = MoveGroup.Goal()
                 goal.request.group_name = "manipulator"
                 goal.request.num_planning_attempts = 10
                 goal.request.allowed_planning_time = 2.0
                 
-                # Restricciones
                 pc = PositionConstraint()
                 pc.header.frame_id = "base_link"
                 pc.link_name = "tool0"
@@ -66,7 +97,7 @@ class CerebroWeb(Node):
                 
                 target = Pose()
                 target.position.x, target.position.y, target.position.z = x, y, z
-                target.orientation.x, target.orientation.y, target.orientation.z, target.orientation.w = q
+                target.orientation.x, target.orientation.y, target.orientation.z, target.orientation.w = q[0], q[1], q[2], q[3]
                 pc.constraint_region.primitive_poses.append(target)
                 
                 oc = OrientationConstraint()
@@ -83,6 +114,7 @@ class CerebroWeb(Node):
                 constraints.orientation_constraints.append(oc)
                 goal.request.goal_constraints.append(constraints)
 
+                # 3. Mandar a simular a MoveIt
                 self.cli.wait_for_server()
                 self.future = self.cli.send_goal_async(goal)
                 self.future.add_done_callback(self.goal_accepted_cb)
@@ -93,23 +125,27 @@ class CerebroWeb(Node):
     def goal_accepted_cb(self, future):
         goal_handle = future.result()
         if not goal_handle.accepted:
-            self.enviar_feedback("ERROR: ⚠️ Rechazado por el sistema")
+            self.enviar_feedback("ERROR: ⚠️ Rechazado por MoveIt")
             return
         
-        # Una vez aceptado, esperamos el RESULTADO FINAL
         self._get_result_future = goal_handle.get_result_async()
         self._get_result_future.add_done_callback(self.result_cb)
 
     def result_cb(self, future):
         result = future.result().result
-        # MoveIt Error Code 1 significa "SUCCESS". Todo lo demás es fallo.
         error_code = result.error_code.val
         
+        # Si MoveIt lo hace con éxito (RViz se mueve)
         if error_code == 1:
-            self.enviar_feedback("EXITO: ✅ Movimiento completado")
+            # ¡AHORA INTENTAMOS ENVIARLO AL ROBOT REAL!
+            exito_real = self.enviar_al_robot_real(self.ultimo_comando)
+            
+            if exito_real:
+                self.enviar_feedback("EXITO: ✅ Movimiento completado (RViz + Robot Real)")
+            else:
+                self.enviar_feedback("INFO: 🎮 Simulación completada (Robot Físico no detectado)")
         else:
-            # Aquí capturamos si no llega, si hay colisión, etc.
-            self.enviar_feedback(f"ERROR: ⚠️ Fallo de planificación (Código {error_code}). Inalcanzable o colisión.")
+            self.enviar_feedback(f"ERROR: ⚠️ Fallo de planificación MoveIt (Colisión o Inalcanzable).")
 
 def main():
     rclpy.init()
