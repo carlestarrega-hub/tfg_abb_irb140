@@ -7,89 +7,43 @@
 
 <style>
   body { font-family: 'Segoe UI', sans-serif; background-color: #eef2f5; text-align: center; padding: 20px; }
-    
-  .panel { 
-    background: white; 
-    padding: 30px; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
-    max-width: 500px; 
-    margin: auto; 
-    position: relative;
-  }
-
+  .panel { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 500px; margin: auto; position: relative;}
   h1 { margin-top: 0; color: #333; font-size: 24px; text-transform: uppercase; letter-spacing: 1px;}
   h3 { margin-bottom: 10px; color: #555; border-bottom: 2px solid #eee; padding-bottom: 5px; font-size: 18px;}
-    
-  /* Inputs de Posición */
   label { font-weight: bold; color: #666; margin-right: 5px; }
-  input[type=number] { 
-    width: 70px; padding: 8px; font-size: 16px; 
-    text-align: center; border: 1px solid #ddd; border-radius: 5px; margin-right: 10px;
-  }
-
-  /* Sliders */
+  input[type=number] { width: 70px; padding: 8px; font-size: 16px; text-align: center; border: 1px solid #ddd; border-radius: 5px; margin-right: 10px;}
   input[type=range] { width: 100%; margin: 10px 0; accent-color: #007bff; cursor: pointer; }
   .val-display { font-weight:bold; color:#007bff; font-size: 14px; float: right; }
   .slider-group { text-align: left; margin-bottom: 20px; }
   .slider-label { font-size: 14px; color: #444; font-weight: 600; }
-
-  /* BOTONES ESTÁNDAR */
-  .btn {
-    background-color: #007bff; color: white; border: none;
-    padding: 15px; font-size: 18px; cursor: pointer;
-    border-radius: 8px; width: 100%; transition: 0.2s; font-weight: bold;
-    margin-top: 10px;
-    box-shadow: 0 4px 0 #0056b3; /* Efecto 3D */
-  }
+  
+  .btn { background-color: #007bff; color: white; border: none; padding: 15px; font-size: 18px; cursor: pointer; border-radius: 8px; width: 100%; transition: 0.2s; font-weight: bold; margin-top: 10px; box-shadow: 0 4px 0 #0056b3; }
   .btn:hover { background-color: #0056b3; transform: translateY(2px); box-shadow: 0 2px 0 #0056b3; }
   .btn:active { transform: translateY(4px); box-shadow: none; }
-
-  /* BOTÓN POSICIÓN INICIAL (Gris/Azulado) */
-  .btn-home {
-    background-color: #6c757d; 
-    box-shadow: 0 4px 0 #545b62;
-    margin-bottom: 20px;
-  }
+  .btn-home { background-color: #6c757d; box-shadow: 0 4px 0 #545b62; margin-bottom: 20px;}
   .btn-home:hover { background-color: #5a6268; }
+  
+  /* NUEVOS BOTONES DE EJERCICIOS (Ajustados a 32% para que quepan 3) */
+  .btn-ej { width: 32%; padding: 10px; font-size: 14px; }
+  .btn-ej1 { background-color: #28a745; box-shadow: 0 4px 0 #1e7e34; }
+  .btn-ej1:hover { background-color: #218838; }
+  .btn-ej2 { background-color: #17a2b8; box-shadow: 0 4px 0 #117a8b; }
+  .btn-ej2:hover { background-color: #138496; }
+  .btn-ej3 { background-color: #6f42c1; box-shadow: 0 4px 0 #59339d; }
+  .btn-ej3:hover { background-color: #5a329f; }
 
-  /* BOTÓN STOP (SETA DE EMERGENCIA) */
-  .btn-stop {
-    background-color: #dc3545; color: white; border: none;
-    width: 80px; height: 80px; font-size: 20px; font-weight: bold;
-    border-radius: 50%; /* Redondo */
-    cursor: pointer;
-    box-shadow: 0 6px 0 #a71d2a, 0 10px 20px rgba(0,0,0,0.3);
-    position: absolute; /* Lo colocamos en la esquina */
-    top: -20px; right: -20px;
-    border: 4px solid white;
-    z-index: 100;
-  }
-  .btn-stop:active { 
-    transform: translateY(6px); 
-    box-shadow: 0 0 0 #a71d2a; 
-  }
-
-  /* Estado Conexión */
+  .btn-stop { background-color: #dc3545; color: white; border: none; width: 80px; height: 80px; font-size: 20px; font-weight: bold; border-radius: 50%; cursor: pointer; box-shadow: 0 6px 0 #a71d2a, 0 10px 20px rgba(0,0,0,0.3); position: absolute; top: -20px; right: -20px; border: 4px solid white; z-index: 100;}
+  .btn-stop:active { transform: translateY(6px); box-shadow: 0 0 0 #a71d2a; }
   #statusIndicator { display:inline-block; width:15px; height:15px; border-radius:50%; background-color:red; margin-right:5px; vertical-align: middle; }
   #statusText { font-weight: bold; vertical-align: middle; }
   .status-bar { background: #f8f9fa; padding: 10px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #eee;}
-
-  /* --- NUEVOS ESTILOS PARA ALERTAS --- */
-  #alertBox { 
-      padding: 15px; margin-bottom: 20px; border-radius: 8px; font-weight: bold; display: none; 
-      transition: all 0.3s ease; text-align: left;
-  }
+  #alertBox { padding: 15px; margin-bottom: 20px; border-radius: 8px; font-weight: bold; display: none; transition: all 0.3s ease; text-align: left;}
   .alert-success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
   .alert-error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
   .alert-info { background-color: #cce5ff; color: #004085; border: 1px solid #b8daff; }
-
-  /* --- NUEVOS ESTILOS PARA INSTRUCCIONES MANUALES --- */
   .cmd-container { display:flex; justify-content: space-between; margin-top: 10px; }
   input[type=text] { width: 65%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; font-family: monospace; }
   .btn-cmd { width: 30%; background-color: #6c757d; font-size: 14px; padding: 10px; box-shadow: 0 4px 0 #545b62; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;}
-  .btn-cmd:active { transform: translateY(2px); box-shadow: none; }
-
 </style>
 
 <script type="text/javascript">
@@ -98,126 +52,79 @@
   var feedbackTopic;
 
   function init() {
-    // ---------------------------------------------------------
-    // 1. Conectar con ROS (MODIFICADO PARA DETECTAR IP AUTOMÁTICA)
-    // ---------------------------------------------------------
-    var ip_actual = window.location.hostname; // Detecta si es 192.168... o 10.23...
-    ros = new ROSLIB.Ros({ url : 'ws://' + ip_actual + ':9090' });
+    var pi_ip = window.location.hostname;
+    ros = new ROSLIB.Ros({ url : 'ws://' + pi_ip + ':9090' });
 
     ros.on('connection', function() {
-        document.getElementById("statusIndicator").style.backgroundColor = "#28a745"; // Verde
-        document.getElementById("statusText").innerHTML = "CONECTADO A: " + ip_actual;
+        document.getElementById("statusIndicator").style.backgroundColor = "#28a745"; 
+        document.getElementById("statusText").innerHTML = "CONECTADO";
         document.getElementById("statusText").style.color = "#28a745";
-        showMsg("INFO: Conexión establecida con " + ip_actual, "info");
+        showMsg("INFO: Conexión establecida. Listo.", "info");
     });
-
-    ros.on('error', function(error) {
-        document.getElementById("statusIndicator").style.backgroundColor = "orange";
-        document.getElementById("statusText").innerHTML = "ERROR DE CONEXIÓN";
-        showMsg("ERROR: No se puede conectar al websocket ws://" + ip_actual + ":9090", "error");
-    });
-
+    ros.on('error', function(error) { showMsg("ERROR: No se puede conectar con ROS", "error"); });
     ros.on('close', function() {
         document.getElementById("statusIndicator").style.backgroundColor = "red";
         document.getElementById("statusText").innerHTML = "DESCONECTADO";
         document.getElementById("statusText").style.color = "red";
     });
 
-    // 2. Definir los Tópicos
-    ordenTopic = new ROSLIB.Topic({
-      ros : ros,
-      name : '/orden_web',
-      messageType : 'std_msgs/String'
-    });
-
-    // Escuchar Feedback (Respuestas del robot)
-    feedbackTopic = new ROSLIB.Topic({
-      ros : ros,
-      name : '/web_feedback',
-      messageType : 'std_msgs/String'
-    });
-     
+    ordenTopic = new ROSLIB.Topic({ ros : ros, name : '/orden_web', messageType : 'std_msgs/String' });
+    feedbackTopic = new ROSLIB.Topic({ ros : ros, name : '/web_feedback', messageType : 'std_msgs/String' });
+    
     feedbackTopic.subscribe(function(msg) {
         var texto = msg.data;
-        if (texto.includes("ERROR")) {
-            showMsg(texto, "error");
-        } else if (texto.includes("EXITO")) {
-            showMsg(texto, "success");
-        } else {
-            showMsg(texto, "info");
-        }
+        if (texto.includes("ERROR")) { showMsg(texto, "error"); } 
+        else if (texto.includes("EXITO")) { showMsg(texto, "success"); } 
+        else { showMsg(texto, "info"); }
     });
   }
 
-  // Función auxiliar para mostrar alertas
   function showMsg(txt, type) {
       var box = document.getElementById("alertBox");
       box.style.display = "block";
-      box.className = ""; // Limpiar clases
+      box.className = ""; 
       box.classList.add("alert-" + type);
       box.innerHTML = txt;
   }
 
-  function updateDisplay(id, val) {
-    document.getElementById(id).innerText = val + "°";
-  }
+  function updateDisplay(id, val) { document.getElementById(id).innerText = val + "°"; }
 
-  // FUNCIÓN PARA ENVIAR MOVIMIENTO NORMAL
   function enviarCoordenadas() {
     var x = document.getElementById("posX").value;
     var y = document.getElementById("posY").value;
     var z = document.getElementById("posZ").value;
-
     var r = document.getElementById("sl_roll").value;
     var p = document.getElementById("sl_pitch").value;
     var w = document.getElementById("sl_yaw").value;
-
-    // Formato: "MOVE:X,Y,Z,ROLL,PITCH,YAW"
-    var comando = "MOVE:" + x + "," + y + "," + z + "," + r + "," + p + "," + w;
-
-    ordenTopic.publish(new ROSLIB.Message({ data : comando }));
-    console.log("Enviado: " + comando);
+    ordenTopic.publish(new ROSLIB.Message({ data : "MOVE:" + x + "," + y + "," + z + "," + r + "," + p + "," + w }));
   }
 
-  // FUNCIÓN PARA ENVIAR INSTRUCCIÓN MANUAL
   function enviarInstruccion() {
       var texto = document.getElementById("cmdInput").value;
       ordenTopic.publish(new ROSLIB.Message({ data : texto }));
   }
 
-  // 🏠 FUNCIÓN POSICIÓN INICIAL
+  function lanzarEjercicio(num) {
+      ordenTopic.publish(new ROSLIB.Message({ data : "RUN:" + num }));
+  }
+
   function irAHome() {
-    document.getElementById("posX").value = 0.4;
-    document.getElementById("posY").value = 0.0;
-    document.getElementById("posZ").value = 0.5;
-      
-    document.getElementById("sl_roll").value = 0;
-    document.getElementById("sl_pitch").value = 0;
-    document.getElementById("sl_yaw").value = 0;
-
-    updateDisplay('disp_roll', 0);
-    updateDisplay('disp_pitch', 0);
-    updateDisplay('disp_yaw', 0);
-
+    document.getElementById("posX").value = 0.4; document.getElementById("posY").value = 0.0; document.getElementById("posZ").value = 0.5;
+    document.getElementById("sl_roll").value = 0; document.getElementById("sl_pitch").value = 0; document.getElementById("sl_yaw").value = 0;
+    updateDisplay('disp_roll', 0); updateDisplay('disp_pitch', 0); updateDisplay('disp_yaw', 0);
     enviarCoordenadas();
   }
 
-  // ⚠️ FUNCIÓN PARADA DE EMERGENCIA
   function paradaEmergencia() {
-    var comando = "STOP";
-    ordenTopic.publish(new ROSLIB.Message({ data : comando }));
+    ordenTopic.publish(new ROSLIB.Message({ data : "STOP" }));
     alert("⛔ ¡PARADA DE EMERGENCIA ENVIADA!"); 
-    console.log("PARADA DE EMERGENCIA ACTIVADA");
   }
-
 </script>
 </head>
 
 <body onload="init()">
-
   <div class="panel">
     <button class="btn-stop" onclick="paradaEmergencia()">STOP</button>
-
     <h1>🤖 Control de ABB IRB140</h1>
       
     <div class="status-bar">
@@ -235,38 +142,29 @@
     </div>
 
     <h3>🔄 Orientación</h3>
-
-    <div class="slider-group">
-      <div class="slider-label">Giro de Muñeca</div>
-      <span id="disp_roll" class="val-display">0°</span>
-      <input type="range" id="sl_roll" min="-180" max="180" value="0" oninput="updateDisplay('disp_roll', this.value)">
-    </div>
-
-    <div class="slider-group">
-      <div class="slider-label">Inclinación</div>
-      <span id="disp_pitch" class="val-display">0°</span>
-      <input type="range" id="sl_pitch" min="-90" max="90" value="0" oninput="updateDisplay('disp_pitch', this.value)">
-    </div>
-
-    <div class="slider-group">
-      <div class="slider-label">Orientación Lateral</div>
-      <span id="disp_yaw" class="val-display">0°</span>
-      <input type="range" id="sl_yaw" min="-180" max="180" value="0" oninput="updateDisplay('disp_yaw', this.value)">
-    </div>
-
-    <hr>
-
+    <div class="slider-group"><div class="slider-label">Giro de Muñeca</div><span id="disp_roll" class="val-display">0°</span><input type="range" id="sl_roll" min="-180" max="180" value="0" oninput="updateDisplay('disp_roll', this.value)"></div>
+    <div class="slider-group"><div class="slider-label">Inclinación</div><span id="disp_pitch" class="val-display">0°</span><input type="range" id="sl_pitch" min="-90" max="90" value="0" oninput="updateDisplay('disp_pitch', this.value)"></div>
+    <div class="slider-group"><div class="slider-label">Orientación Lateral</div><span id="disp_yaw" class="val-display">0°</span><input type="range" id="sl_yaw" min="-180" max="180" value="0" oninput="updateDisplay('disp_yaw', this.value)"></div>
+    
     <button class="btn btn-home" onclick="irAHome()">⌂ POSICIÓN INICIAL</button>
     <button class="btn" onclick="enviarCoordenadas()">🚀 EJECUTAR MOVIMIENTO</button>
 
     <hr>
+    
+    <h3>⚙️ Rutinas Automáticas</h3>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+        <button class="btn btn-ej btn-ej1" onclick="lanzarEjercicio('1')">▶ EJ 1</button>
+        <button class="btn btn-ej btn-ej2" onclick="lanzarEjercicio('2')">▶ EJ 2</button>
+        <button class="btn btn-ej btn-ej3" onclick="lanzarEjercicio('3')">▶ EJ 3 (🧲)</button>
+    </div>
+
+    <hr>
+    
     <h3>⌨️ Instrucciones Manuales</h3>
     <div class="cmd-container">
         <input type="text" id="cmdInput" placeholder="Ej: MOVE:0.5,0,0.5,0,0,0">
         <button class="btn-cmd" onclick="enviarInstruccion()">ENVIAR</button>
     </div>
-
   </div>
-
 </body>
 </html>
